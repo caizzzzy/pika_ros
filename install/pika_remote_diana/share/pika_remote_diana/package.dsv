@@ -1,0 +1,6 @@
+source;share/pika_remote_diana/hook/pythonpath.ps1
+source;share/pika_remote_diana/hook/pythonpath.dsv
+source;share/pika_remote_diana/hook/pythonpath.sh
+source;share/pika_remote_diana/hook/ament_prefix_path.ps1
+source;share/pika_remote_diana/hook/ament_prefix_path.dsv
+source;share/pika_remote_diana/hook/ament_prefix_path.sh

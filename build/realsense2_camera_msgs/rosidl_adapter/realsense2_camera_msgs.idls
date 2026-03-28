@@ -1,0 +1,5 @@
+/mnt/nas/projects/robot/pika_ros/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/IMUInfo.idl
+/mnt/nas/projects/robot/pika_ros/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/Extrinsics.idl
+/mnt/nas/projects/robot/pika_ros/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/Metadata.idl
+/mnt/nas/projects/robot/pika_ros/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/RGBD.idl
+/mnt/nas/projects/robot/pika_ros/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:srv/DeviceInfo.idl

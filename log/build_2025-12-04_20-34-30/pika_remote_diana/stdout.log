@@ -1,0 +1,47 @@
+running egg_info
+creating ../../../../build/pika_remote_diana/pika_remote_diana.egg-info
+writing ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/dependency_links.txt
+writing entry points to ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/entry_points.txt
+writing requirements to ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/requires.txt
+writing top-level names to ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/top_level.txt
+writing manifest file '../../../../build/pika_remote_diana/pika_remote_diana.egg-info/SOURCES.txt'
+reading manifest file '../../../../build/pika_remote_diana/pika_remote_diana.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/pika_remote_diana/pika_remote_diana.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build
+creating /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib
+creating /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+copying pika_remote_diana/__init__.py -> /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+copying pika_remote_diana/teleop_diana.py -> /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+copying pika_remote_diana/tools.py -> /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+copying pika_remote_diana/transformations.py -> /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+running install
+running install_lib
+creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+copying /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana/__init__.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+copying /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana/teleop_diana.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+copying /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana/tools.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+copying /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana/transformations.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+byte-compiling /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana/__init__.py to __init__.cpython-310.pyc
+byte-compiling /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana/teleop_diana.py to teleop_diana.cpython-310.pyc
+byte-compiling /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana/tools.py to tools.cpython-310.pyc
+byte-compiling /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana/transformations.py to transformations.cpython-310.pyc
+running install_data
+creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/ament_index
+creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/ament_index/resource_index
+creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/ament_index/resource_index/packages
+copying resource/pika_remote_diana -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/ament_index/resource_index/packages
+copying package.xml -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana
+creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/launch
+copying launch/teleop_double_diana.launch.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/launch
+copying launch/teleop_single_diana.launch.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/launch
+creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/config
+copying config/left_params.yaml -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/config
+copying config/right_params.yaml -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/config
+running install_egg_info
+Copying ../../../../build/pika_remote_diana/pika_remote_diana.egg-info to /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana-0.0.1-py3.10.egg-info
+running install_scripts
+Installing teleop_diana script to /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/pika_remote_diana
+writing list of installed files to '/mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/install.log'

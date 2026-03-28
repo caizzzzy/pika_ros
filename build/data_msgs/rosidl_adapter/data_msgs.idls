@@ -1,0 +1,6 @@
+/mnt/nas/projects/robot/pika_ros/build/data_msgs/rosidl_adapter/data_msgs:msg/Gripper.idl
+/mnt/nas/projects/robot/pika_ros/build/data_msgs/rosidl_adapter/data_msgs:msg/CaptureStatus.idl
+/mnt/nas/projects/robot/pika_ros/build/data_msgs/rosidl_adapter/data_msgs:msg/TeleopStatus.idl
+/mnt/nas/projects/robot/pika_ros/build/data_msgs/rosidl_adapter/data_msgs:msg/LocalizationStatus.idl
+/mnt/nas/projects/robot/pika_ros/build/data_msgs/rosidl_adapter/data_msgs:msg/ArmControlStatus.idl
+/mnt/nas/projects/robot/pika_ros/build/data_msgs/rosidl_adapter/data_msgs:srv/CaptureService.idl

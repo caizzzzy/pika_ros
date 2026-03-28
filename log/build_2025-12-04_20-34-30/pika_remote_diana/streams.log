@@ -1,0 +1,49 @@
+[1.021s] Invoking command in '/mnt/nas/projects/robot/pika_ros/src/PikaAnyArm/diana/pika_remote_diana': PYTHONPATH=/mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/pika_remote_diana build --build-base /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build install --record /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/install.log --single-version-externally-managed install_data
+[1.407s] running egg_info
+[1.407s] creating ../../../../build/pika_remote_diana/pika_remote_diana.egg-info
+[1.408s] writing ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/PKG-INFO
+[1.410s] writing dependency_links to ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/dependency_links.txt
+[1.411s] writing entry points to ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/entry_points.txt
+[1.412s] writing requirements to ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/requires.txt
+[1.412s] writing top-level names to ../../../../build/pika_remote_diana/pika_remote_diana.egg-info/top_level.txt
+[1.413s] writing manifest file '../../../../build/pika_remote_diana/pika_remote_diana.egg-info/SOURCES.txt'
+[1.417s] reading manifest file '../../../../build/pika_remote_diana/pika_remote_diana.egg-info/SOURCES.txt'
+[1.418s] writing manifest file '../../../../build/pika_remote_diana/pika_remote_diana.egg-info/SOURCES.txt'
+[1.419s] running build
+[1.419s] running build_py
+[1.419s] creating /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build
+[1.420s] creating /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib
+[1.420s] creating /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+[1.421s] copying pika_remote_diana/__init__.py -> /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+[1.422s] copying pika_remote_diana/teleop_diana.py -> /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+[1.423s] copying pika_remote_diana/tools.py -> /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+[1.424s] copying pika_remote_diana/transformations.py -> /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana
+[1.426s] running install
+[1.426s] running install_lib
+[1.428s] creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+[1.428s] copying /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana/__init__.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+[1.429s] copying /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana/teleop_diana.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+[1.431s] copying /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana/tools.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+[1.433s] copying /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build/lib/pika_remote_diana/transformations.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana
+[1.436s] byte-compiling /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana/__init__.py to __init__.cpython-310.pyc
+[1.438s] byte-compiling /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana/teleop_diana.py to teleop_diana.cpython-310.pyc
+[1.442s] byte-compiling /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana/tools.py to tools.cpython-310.pyc
+[1.444s] byte-compiling /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana/transformations.py to transformations.cpython-310.pyc
+[1.454s] running install_data
+[1.454s] creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/ament_index
+[1.454s] creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/ament_index/resource_index
+[1.455s] creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/ament_index/resource_index/packages
+[1.456s] copying resource/pika_remote_diana -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/ament_index/resource_index/packages
+[1.457s] copying package.xml -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana
+[1.458s] creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/launch
+[1.458s] copying launch/teleop_double_diana.launch.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/launch
+[1.459s] copying launch/teleop_single_diana.launch.py -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/launch
+[1.460s] creating /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/config
+[1.461s] copying config/left_params.yaml -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/config
+[1.462s] copying config/right_params.yaml -> /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/share/pika_remote_diana/config
+[1.463s] running install_egg_info
+[1.465s] Copying ../../../../build/pika_remote_diana/pika_remote_diana.egg-info to /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages/pika_remote_diana-0.0.1-py3.10.egg-info
+[1.476s] running install_scripts
+[1.494s] Installing teleop_diana script to /mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/pika_remote_diana
+[1.495s] writing list of installed files to '/mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/install.log'
+[1.519s] Invoked command in '/mnt/nas/projects/robot/pika_ros/src/PikaAnyArm/diana/pika_remote_diana' returned '0': PYTHONPATH=/mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/pika_remote_diana build --build-base /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/build install --record /mnt/nas/projects/robot/pika_ros/build/pika_remote_diana/install.log --single-version-externally-managed install_data

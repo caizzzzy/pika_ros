@@ -1,0 +1,178 @@
+[0.024s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/realsense2_camera': CMAKE_PREFIX_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble LD_LIBRARY_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/pika_locator/lib:/mnt/nas/projects/robot/pika_ros/install/libsurvive/lib:/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /mnt/nas/projects/robot/pika_ros/src/realsense-ros/realsense2_camera -DCMAKE_INSTALL_PREFIX=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera
+[0.204s] -- The C compiler identification is GNU 11.4.0
+[0.280s] -- The CXX compiler identification is GNU 11.4.0
+[0.292s] -- Detecting C compiler ABI info
+[0.426s] -- Detecting C compiler ABI info - done
+[0.437s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.438s] -- Detecting C compile features
+[0.438s] -- Detecting C compile features - done
+[0.444s] -- Detecting CXX compiler ABI info
+[0.594s] -- Detecting CXX compiler ABI info - done
+[0.605s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.605s] -- Detecting CXX compile features
+[0.606s] -- Detecting CXX compile features - done
+[0.610s] -- Create Release Build.
+[0.629s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.878s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.200s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.322s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.357s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.388s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.422s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.653s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.850s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[2.272s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[2.439s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.453s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.640s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.685s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.759s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.897s] -- Looking for pthread.h
+[3.037s] -- Looking for pthread.h - found
+[3.038s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.159s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.161s] -- Found Threads: TRUE  
+[3.332s] -- Found rclcpp_components: 16.0.16 (/opt/ros/humble/share/rclcpp_components/cmake)
+[3.364s] -- Found realsense2_camera_msgs: 4.55.1 (/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[3.405s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.430s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.574s] -- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[3.620s] -- Found OpenCV: /usr (found version "4.5.4") found components: core 
+[3.647s] -- Build for ROS2 Humble
+[3.683s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.698s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.716s] -- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[7.557s] -- rs_device_info:
+[7.557s] -- Device Name                   Serial Number       Firmware Version
+[7.557s] Intel RealSense D405          315122271439        5.12.14.100
+[7.557s] Intel RealSense D405          230422273090        5.12.14.100
+[7.557s] 
+[7.702s] -- Configuring done
+[7.909s] -- Generating done
+[7.937s] -- Build files have been written to: /mnt/nas/projects/robot/pika_ros/build/realsense2_camera
+[7.952s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble LD_LIBRARY_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/pika_locator/lib:/mnt/nas/projects/robot/pika_ros/install/libsurvive/lib:/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /mnt/nas/projects/robot/pika_ros/src/realsense-ros/realsense2_camera -DCMAKE_INSTALL_PREFIX=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera
+[7.959s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/realsense2_camera': CMAKE_PREFIX_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble LD_LIBRARY_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/pika_locator/lib:/mnt/nas/projects/robot/pika_ros/install/libsurvive/lib:/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/realsense2_camera -- -j128 -l128
+[7.971s] gmake: 警告：文件“Makefile”的修改时间在未来 168 秒后
+[8.007s] gmake[1]: 警告：文件“CMakeFiles/Makefile2”的修改时间在未来 168 秒后
+[8.010s] gmake[2]: 警告：文件“CMakeFiles/realsense2_camera_node.dir/flags.make”的修改时间在未来 168 秒后
+[8.012s] gmake[2]: 警告：文件“gtest/CMakeFiles/gtest.dir/flags.make”的修改时间在未来 168 秒后
+[8.012s] gmake[2]: 警告：文件“gtest/CMakeFiles/gtest_main.dir/flags.make”的修改时间在未来 168 秒后
+[8.013s] gmake[2]: 警告：文件“CMakeFiles/realsense2_camera.dir/flags.make”的修改时间在未来 168 秒后
+[8.026s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[8.026s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[8.026s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[8.027s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[8.030s] gmake[2]: 警告：文件“gtest/CMakeFiles/gtest_main.dir/flags.make”的修改时间在未来 168 秒后
+[8.031s] gmake[2]: 警告：文件“CMakeFiles/realsense2_camera_node.dir/flags.make”的修改时间在未来 168 秒后
+[8.031s] gmake[2]: 警告：文件“gtest/CMakeFiles/gtest.dir/flags.make”的修改时间在未来 168 秒后
+[8.033s] gmake[2]: 警告：文件“CMakeFiles/realsense2_camera.dir/flags.make”的修改时间在未来 168 秒后
+[8.044s] [  4%] [32mBuilding CXX object CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.o[0m
+[8.044s] [ 13%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[8.045s] [ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[8.045s] [ 18%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o[0m
+[8.046s] [ 22%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o[0m
+[8.047s] [ 27%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o[0m
+[8.048s] [ 36%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o[0m
+[8.048s] [ 36%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o[0m
+[8.050s] [ 40%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o[0m
+[8.051s] [ 50%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o[0m
+[8.051s] [ 54%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o[0m
+[8.052s] [ 63%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o[0m
+[8.053s] [ 68%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o[0m
+[8.053s] [ 68%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o[0m
+[8.053s] [ 68%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o[0m
+[8.054s] [ 72%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o[0m
+[8.728s] [ 77%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[8.773s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[8.786s] [ 77%] Built target gtest_main
+[10.963s] [ 81%] [32m[1mLinking CXX executable realsense2_camera_node[0m
+[11.066s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.082s] [ 81%] Built target realsense2_camera_node
+[16.219s] [ 86%] [32m[1mLinking CXX static library libgtest.a[0m
+[16.318s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[16.331s] [ 86%] Built target gtest
+[16.336s] gmake[2]: 警告：文件“CMakeFiles/gtest_template.dir/flags.make”的修改时间在未来 160 秒后
+[16.349s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[16.354s] gmake[2]: 警告：文件“CMakeFiles/gtest_template.dir/flags.make”的修改时间在未来 160 秒后
+[16.365s] [ 90%] [32mBuilding CXX object CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o[0m
+[17.248s] [ 95%] [32m[1mLinking CXX executable gtest_template[0m
+[17.358s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[17.372s] [ 95%] Built target gtest_template
+[20.695s] [100%] [32m[1mLinking CXX shared library librealsense2_camera.so[0m
+[21.227s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[21.246s] [100%] Built target realsense2_camera
+[21.247s] gmake[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[21.258s] gmake: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[21.263s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble LD_LIBRARY_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/pika_locator/lib:/mnt/nas/projects/robot/pika_ros/install/libsurvive/lib:/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/realsense2_camera -- -j128 -l128
+[21.270s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/realsense2_camera': CMAKE_PREFIX_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble LD_LIBRARY_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/pika_locator/lib:/mnt/nas/projects/robot/pika_ros/install/libsurvive/lib:/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/realsense2_camera
+[21.277s] -- Install configuration: "Release"
+[21.279s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[21.285s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node" to ""
+[21.287s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib/librealsense2_camera.so
+[21.315s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib/librealsense2_camera.so" to ""
+[21.315s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include
+[21.316s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/base_realsense_node.h
+[21.318s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/constants.h
+[21.319s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/dynamic_params.h
+[21.321s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/gl_window.h
+[21.322s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/image_publisher.h
+[21.323s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/named_filter.h
+[21.325s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/profile_manager.h
+[21.326s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/realsense_node_factory.h
+[21.328s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/ros_param_backend.h
+[21.329s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/ros_sensor.h
+[21.330s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/ros_utils.h
+[21.331s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/include/sensor_params.h
+[21.333s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/launch
+[21.333s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[21.335s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[21.336s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[21.338s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[21.339s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples
+[21.340s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/align_depth
+[21.340s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[21.342s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[21.343s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/dual_camera
+[21.343s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[21.345s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_multi_camera_launch2.py
+[21.347s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_multi_camera_launch3.py
+[21.348s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz
+[21.349s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[21.350s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag
+[21.351s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[21.352s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[21.354s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file
+[21.354s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[21.356s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config
+[21.356s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[21.357s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[21.359s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/pointcloud
+[21.359s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[21.360s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[21.362s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[21.364s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[21.365s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz
+[21.365s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[21.367s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[21.369s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[21.370s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[21.372s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[21.373s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[21.375s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[21.376s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[21.377s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[21.378s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[21.379s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[21.381s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[21.382s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[21.384s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[21.385s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/package.dsv
+[21.386s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[21.388s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[21.390s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[21.391s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[21.393s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.395s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[21.396s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[21.397s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/realsense2_camera/share/realsense2_camera/package.xml
+[21.404s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble LD_LIBRARY_PATH=/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/pika_locator/lib:/mnt/nas/projects/robot/pika_ros/install/libsurvive/lib:/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/realsense2_camera

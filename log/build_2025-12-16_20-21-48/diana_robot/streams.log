@@ -1,0 +1,30 @@
+[0.835s] Invoking command in '/mnt/nas/projects/robot/pika_ros/src/PikaAnyArm/diana/diana_sdk': PYTHONPATH=/mnt/nas/projects/robot/pika_ros/build/diana_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/diana_robot build --build-base /mnt/nas/projects/robot/pika_ros/build/diana_robot/build install --record /mnt/nas/projects/robot/pika_ros/build/diana_robot/install.log --single-version-externally-managed
+[1.144s] running egg_info
+[1.145s] writing ../../../../build/diana_robot/diana_robot.egg-info/PKG-INFO
+[1.146s] writing dependency_links to ../../../../build/diana_robot/diana_robot.egg-info/dependency_links.txt
+[1.147s] writing top-level names to ../../../../build/diana_robot/diana_robot.egg-info/top_level.txt
+[1.152s] reading manifest file '../../../../build/diana_robot/diana_robot.egg-info/SOURCES.txt'
+[1.154s] writing manifest file '../../../../build/diana_robot/diana_robot.egg-info/SOURCES.txt'
+[1.155s] running build
+[1.155s] running build_py
+[1.156s] copying diana_robot/DianaRobot.py -> /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot
+[1.160s] running install
+[1.160s] running install_lib
+[1.162s] creating /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.163s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/__init__.py -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.165s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/DianaApi.py -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.168s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/DianaRobot.py -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.170s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/libBasicSdk.so -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.176s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/libDianaApi.so -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.201s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/libGenericAlgorithm.so -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.205s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/libToolSdk.so -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.250s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/libVersionApi.so -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.252s] copying /mnt/nas/projects/robot/pika_ros/build/diana_robot/build/lib/diana_robot/libxml2.so -> /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot
+[1.359s] byte-compiling /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot/__init__.py to __init__.cpython-310.pyc
+[1.362s] byte-compiling /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot/DianaApi.py to DianaApi.cpython-310.pyc
+[1.394s] byte-compiling /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot/DianaRobot.py to DianaRobot.cpython-310.pyc
+[1.397s] running install_egg_info
+[1.400s] Copying ../../../../build/diana_robot/diana_robot.egg-info to /mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages/diana_robot-1.0.0-py3.10.egg-info
+[1.410s] running install_scripts
+[1.436s] writing list of installed files to '/mnt/nas/projects/robot/pika_ros/build/diana_robot/install.log'
+[1.503s] Invoked command in '/mnt/nas/projects/robot/pika_ros/src/PikaAnyArm/diana/diana_sdk' returned '0': PYTHONPATH=/mnt/nas/projects/robot/pika_ros/build/diana_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/diana_robot build --build-base /mnt/nas/projects/robot/pika_ros/build/diana_robot/build install --record /mnt/nas/projects/robot/pika_ros/build/diana_robot/install.log --single-version-externally-managed

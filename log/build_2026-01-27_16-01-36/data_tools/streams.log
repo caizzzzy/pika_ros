@@ -1,0 +1,79 @@
+[0.049s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/data_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/data_tools -- -j128 -l128
+[0.198s] gmake[2]: 警告：文件“/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp”的修改时间在未来 396 秒后
+[0.267s] [ 16%] [32m[1mLinking CXX executable data_tools_dataSync[0m
+[0.269s] [ 33%] [32mBuilding CXX object CMakeFiles/data_tools_dataCapture.dir/src/dataCapture.cpp.o[0m
+[0.276s] [ 50%] [32m[1mLinking CXX executable data_tools_dataPublish[0m
+[0.818s] [ 66%] Built target data_tools_dataSync
+[1.158s] [ 83%] Built target data_tools_dataPublish
+[7.973s] [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:[m[K In member function ‘[01m[Kvoid DataCapture::cameraPointCloudSaving(int)[m[K’:
+[7.973s] [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:925:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid pcl::PassThrough<PointT>::setFilterLimitsNegative(bool) [with PointT = pcl::PointXYZRGB][m[K’ is deprecated: use inherited FilterIndices::setNegative() instead (It will be removed in PCL 1.13) [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[7.973s]   925 |                     [01;35m[Kpass.setFilterLimitsNegative(false)[m[K;
+[7.973s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.974s] In file included from [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:22[m[K:
+[7.974s] [01m[K/usr/include/pcl-1.12/pcl/filters/passthrough.h:156:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[7.974s]   156 |       [01;36m[KsetFilterLimitsNegative[m[K (const bool limit_negative)
+[7.974s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.227s] [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:[m[K In member function ‘[01m[Kvoid DataCapture::monitoring()[m[K’:
+[19.227s] [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:1394:19:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[19.227s]  1394 |             [01;35m[Ksystem("clear")[m[K;
+[19.227s]       |             [01;35m[K~~~~~~^~~~~~~~~[m[K
+[56.797s] [100%] [32m[1mLinking CXX executable data_tools_dataCapture[0m
+[58.616s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[58.633s] [100%] Built target data_tools_dataCapture
+[58.650s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/data_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/data_tools -- -j128 -l128
+[58.665s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/data_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/data_tools
+[58.675s] -- Install configuration: "Release"
+[58.676s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch
+[58.677s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_aloha_data_capture_to_mcap.launch.py
+[58.678s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_compress_camera.launch.py
+[58.678s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_capture.launch.py
+[58.701s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_capture_to_mcap.launch.py
+[58.702s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_publish.launch.py
+[58.702s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_sync.launch.py
+[58.703s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_lift_data_capture_to_mcap.launch.py
+[58.703s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_multi_data_capture_to_mcap.launch.py
+[58.703s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config
+[58.704s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/aloha_data_params.yaml
+[58.705s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/lift_data_params.yaml
+[58.705s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/multi_pika_data_params.yaml
+[58.706s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/multi_pika_teleop_data_params.yaml
+[58.706s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_data_params.yaml
+[58.707s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_teleop_data_params.yaml
+[58.732s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataCapture
+[58.790s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataCapture" to ""
+[58.791s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataSync
+[58.801s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataSync" to ""
+[58.802s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataPublish
+[58.821s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataPublish" to ""
+[58.821s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include
+[58.822s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include/blockingDeque.h
+[58.822s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include/dataUtility.h
+[58.823s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/aloha_data_to_mcap.py
+[58.823s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/camera_point_cloud_filter.py
+[58.824s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/compress_camera.py
+[58.824s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_publish.py
+[58.825s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_refacctoring_tar.py
+[58.825s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_sync.py
+[58.826s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_to_hdf5.py
+[58.827s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/hdf5_to_lerobot.py
+[58.827s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/hdf5_to_mcap.py
+[58.828s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/load_data_example.py
+[58.828s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/mcap_to_aloha_data.py
+[58.829s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/record_mcap.py
+[58.829s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/package_run_dependencies/data_tools
+[58.830s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/parent_prefix_path/data_tools
+[58.830s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/ament_prefix_path.sh
+[58.830s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/ament_prefix_path.dsv
+[58.831s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/path.sh
+[58.831s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/path.dsv
+[58.832s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.bash
+[58.832s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.sh
+[58.832s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.zsh
+[58.833s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.dsv
+[58.833s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/package.dsv
+[58.835s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/packages/data_tools
+[58.836s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/ament_cmake_export_include_directories-extras.cmake
+[58.836s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/data_toolsConfig.cmake
+[58.837s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/data_toolsConfig-version.cmake
+[58.837s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/package.xml
+[58.840s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/data_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/data_tools

@@ -1,0 +1,49 @@
+[35m[1mConsolidate compiler generated dependencies of target serial_gripper_imu[0m
+gmake[2]: 警告：文件“CMakeFiles/serial_gripper_imu.dir/compiler_depend.make”的修改时间在未来 223 秒后
+gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[100%] Built target serial_gripper_imu
+-- Install configuration: ""
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_fisheye.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_multi_gripper.launch.py
+-- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_multi_sensor.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_sensor_gripper.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_single_gripper.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_single_sensor.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/find_usb_camera.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/multi_transmit_topics.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/pika_localization_setup.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/setup_device.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/setup_multi_gripper.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/setup_multi_sensor.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/setup_sensor_gripper.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/single_transmit_topics.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_multi_gripper.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_multi_sensor.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_sensor_gripper.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_single_gripper.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_single_sensor.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/usb_camera.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/81-vive.rules
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/calibration.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/lib/sensor_tools/serial_gripper_imu
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/include
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/include/.keep
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/lib/sensor_tools/usb_camera.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/ament_index/resource_index/package_run_dependencies/sensor_tools
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/ament_index/resource_index/parent_prefix_path/sensor_tools
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/environment/ament_prefix_path.sh
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/environment/ament_prefix_path.dsv
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/environment/path.sh
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/environment/path.dsv
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/local_setup.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/local_setup.sh
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/local_setup.zsh
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/local_setup.dsv
+-- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/package.dsv
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/ament_index/resource_index/packages/sensor_tools
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/cmake/sensor_toolsConfig.cmake
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/cmake/sensor_toolsConfig-version.cmake
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/package.xml

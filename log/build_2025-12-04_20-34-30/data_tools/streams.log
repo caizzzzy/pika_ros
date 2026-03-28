@@ -1,0 +1,216 @@
+[0.054s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/data_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake /mnt/nas/projects/robot/pika_ros/src/data_tools -DCMAKE_INSTALL_PREFIX=/mnt/nas/projects/robot/pika_ros/install/data_tools
+[0.607s] -- The C compiler identification is GNU 11.4.0
+[0.607s] -- The CXX compiler identification is GNU 11.4.0
+[0.607s] -- Detecting C compiler ABI info
+[0.607s] -- Detecting C compiler ABI info - done
+[0.607s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.607s] -- Detecting C compile features
+[0.607s] -- Detecting C compile features - done
+[0.608s] -- Detecting CXX compiler ABI info
+[0.608s] -- Detecting CXX compiler ABI info - done
+[0.608s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.608s] -- Detecting CXX compile features
+[0.608s] -- Detecting CXX compile features - done
+[0.608s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.838s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.654s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.675s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[1.900s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.941s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.981s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.030s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.094s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.299s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.319s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.547s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.592s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.685s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.746s] -- Looking for pthread.h
+[2.882s] -- Looking for pthread.h - found
+[2.883s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.024s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.026s] -- Found Threads: TRUE  
+[3.164s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[3.178s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[3.293s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.325s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.362s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[3.479s] -- Checking for module 'eigen3'
+[3.499s] --   Found eigen3, version 3.4.0
+[3.562s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[3.563s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.770s] -- Checking for module 'flann'
+[3.790s] --   Found flann, version 1.9.1
+[3.849s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[3.849s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[5.618s] -- Checking for module 'libusb-1.0'
+[5.638s] --   Found libusb-1.0, version 1.0.25
+[5.702s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[5.703s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.652s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.882s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.892s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.905s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.153s] -- Found Qhull version 8.0.2
+[7.333s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.511s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[7.512s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[7.513s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[7.514s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[7.514s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[7.515s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[7.516s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[7.516s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[7.517s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[7.518s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[7.519s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[7.520s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[7.521s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[7.522s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[7.523s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[7.524s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[7.525s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[7.526s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[7.527s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[7.528s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[7.529s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[7.530s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[7.530s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[7.531s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[7.532s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[8.660s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[8.713s] -- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[8.814s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[8.815s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[8.816s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[9.109s] -- Found tf2_sensor_msgs: 0.25.17 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[9.137s] -- Found tf2_eigen: 0.25.17 (/opt/ros/humble/share/tf2_eigen/cmake)
+[9.912s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[10.055s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[10.055s] -- Found OpenMP: TRUE (found version "4.5")  
+[10.056s] [33mCMake Warning (dev) at CMakeLists.txt:34 (find_package):
+[10.056s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[10.056s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[10.056s]   command to set the policy and suppress this warning.
+[10.057s] 
+[10.057s]   CMake variable PCL_ROOT is set to:
+[10.057s] 
+[10.057s]     /usr
+[10.057s] 
+[10.057s]   For compatibility, CMake is ignoring the variable.
+[10.057s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[10.057s] [0m
+[10.111s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: timer 
+[10.122s] -- Found data_msgs: 0.0.0 (/mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake)
+[10.241s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.469s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.478s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.479s] -- Configured cppcheck include dirs: /mnt/nas/projects/robot/pika_ros/src/data_tools/include
+[10.479s] -- Configured cppcheck exclude dirs and/or files: 
+[10.487s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.487s] -- Configured cpplint exclude dirs and/or files: 
+[10.489s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.492s] -- Added test 'lint_cmake' to check CMake code style
+[10.494s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[10.502s] -- Added test 'uncrustify' to check C / C++ code style
+[10.502s] -- Configured uncrustify additional arguments: 
+[10.504s] -- Added test 'xmllint' to check XML markup files
+[10.513s] -- Configuring done
+[10.730s] -- Generating done
+[10.788s] -- Build files have been written to: /mnt/nas/projects/robot/pika_ros/build/data_tools
+[10.812s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/data_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake /mnt/nas/projects/robot/pika_ros/src/data_tools -DCMAKE_INSTALL_PREFIX=/mnt/nas/projects/robot/pika_ros/install/data_tools
+[10.821s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/data_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/data_tools -- -j128 -l128
+[10.834s] gmake: 警告：文件“Makefile”的修改时间在未来 168 秒后
+[10.873s] gmake[1]: 警告：文件“CMakeFiles/Makefile2”的修改时间在未来 168 秒后
+[10.879s] gmake[2]: 警告：文件“CMakeFiles/data_tools_dataPublish.dir/flags.make”的修改时间在未来 168 秒后
+[10.880s] gmake[2]: 警告：文件“CMakeFiles/data_tools_dataCapture.dir/flags.make”的修改时间在未来 168 秒后
+[10.880s] gmake[2]: 警告：文件“CMakeFiles/data_tools_dataSync.dir/flags.make”的修改时间在未来 168 秒后
+[10.894s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[10.895s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[10.895s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[10.900s] gmake[2]: 警告：文件“CMakeFiles/data_tools_dataPublish.dir/flags.make”的修改时间在未来 168 秒后
+[10.900s] gmake[2]: 警告：文件“CMakeFiles/data_tools_dataCapture.dir/flags.make”的修改时间在未来 168 秒后
+[10.901s] gmake[2]: 警告：文件“CMakeFiles/data_tools_dataSync.dir/flags.make”的修改时间在未来 168 秒后
+[10.914s] [ 33%] [32mBuilding CXX object CMakeFiles/data_tools_dataPublish.dir/src/dataPublish.cpp.o[0m
+[10.914s] [ 33%] [32mBuilding CXX object CMakeFiles/data_tools_dataCapture.dir/src/dataCapture.cpp.o[0m
+[10.914s] [ 50%] [32mBuilding CXX object CMakeFiles/data_tools_dataSync.dir/src/dataSync.cpp.o[0m
+[17.341s] [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:[m[K In member function ‘[01m[Kvoid DataCapture::cameraPointCloudSaving(int)[m[K’:
+[17.341s] [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:925:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid pcl::PassThrough<PointT>::setFilterLimitsNegative(bool) [with PointT = pcl::PointXYZRGB][m[K’ is deprecated: use inherited FilterIndices::setNegative() instead (It will be removed in PCL 1.13) [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[17.341s]   925 |                     [01;35m[Kpass.setFilterLimitsNegative(false)[m[K;
+[17.341s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[17.341s] In file included from [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:22[m[K:
+[17.341s] [01m[K/usr/include/pcl-1.12/pcl/filters/passthrough.h:156:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.341s]   156 |       [01;36m[KsetFilterLimitsNegative[m[K (const bool limit_negative)
+[17.342s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[22.451s] [ 66%] [32m[1mLinking CXX executable data_tools_dataSync[0m
+[22.811s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[22.826s] [ 66%] Built target data_tools_dataSync
+[27.057s] [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:[m[K In member function ‘[01m[Kvoid DataCapture::monitoring()[m[K’:
+[27.057s] [01m[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:1392:19:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint system(const char*)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[27.057s]  1392 |             [01;35m[Ksystem("clear")[m[K;
+[27.057s]       |             [01;35m[K~~~~~~^~~~~~~~~[m[K
+[31.483s] [ 83%] [32m[1mLinking CXX executable data_tools_dataPublish[0m
+[32.265s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[32.323s] [ 83%] Built target data_tools_dataPublish
+[59.139s] [100%] [32m[1mLinking CXX executable data_tools_dataCapture[0m
+[60.648s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[60.663s] [100%] Built target data_tools_dataCapture
+[60.664s] gmake[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[60.678s] gmake: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[60.683s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/data_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/data_tools -- -j128 -l128
+[60.689s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/data_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/data_tools
+[60.695s] -- Install configuration: "Release"
+[60.695s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch
+[60.696s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_aloha_data_capture_to_mcap.launch.py
+[60.697s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_compress_camera.launch.py
+[60.699s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_capture.launch.py
+[60.700s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_capture_to_mcap.launch.py
+[60.701s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_publish.launch.py
+[60.703s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_sync.launch.py
+[60.704s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_lift_data_capture_to_mcap.launch.py
+[60.705s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_multi_data_capture_to_mcap.launch.py
+[60.707s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config
+[60.707s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/aloha_data_params.yaml
+[60.708s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/lift_data_params.yaml
+[60.710s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/multi_pika_data_params.yaml
+[60.711s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/multi_pika_teleop_data_params.yaml
+[60.712s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_data_params.yaml
+[60.713s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_teleop_data_params.yaml
+[60.717s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataCapture
+[60.755s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataCapture" to ""
+[60.757s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataSync
+[60.762s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataSync" to ""
+[60.764s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataPublish
+[60.776s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataPublish" to ""
+[60.777s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include
+[60.777s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/include/blockingDeque.h
+[60.778s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/include/dataUtility.h
+[60.780s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/aloha_data_to_mcap.py
+[60.782s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/camera_point_cloud_filter.py
+[60.784s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/compress_camera.py
+[60.785s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_publish.py
+[60.787s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_refacctoring_tar.py
+[60.788s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_sync.py
+[60.790s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_to_hdf5.py
+[60.792s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/hdf5_to_lerobot.py
+[60.794s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/hdf5_to_mcap.py
+[60.796s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/load_data_example.py
+[60.797s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/mcap_to_aloha_data.py
+[60.799s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/record_mcap.py
+[60.801s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/package_run_dependencies/data_tools
+[60.803s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/parent_prefix_path/data_tools
+[60.804s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/ament_prefix_path.sh
+[60.806s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/ament_prefix_path.dsv
+[60.807s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/path.sh
+[60.808s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/path.dsv
+[60.809s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.bash
+[60.811s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.sh
+[60.813s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.zsh
+[60.814s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.dsv
+[60.815s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/package.dsv
+[60.817s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/packages/data_tools
+[60.818s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/ament_cmake_export_include_directories-extras.cmake
+[60.819s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/data_toolsConfig.cmake
+[60.821s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/data_toolsConfig-version.cmake
+[60.822s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/package.xml
+[60.826s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/data_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/data_tools

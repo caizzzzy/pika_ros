@@ -1,0 +1,5 @@
+teleop_left:
+  ros__parameters:
+    pika_to_arm: [0.0, 0.0, 0.0, 0.0, 1.570796, 0.0]
+    robot_ip: "192.168.10.75"
+    index_name: "_l"    # 如果需要

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-1502c620a2ba3dd617c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "data_tools",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "data_tools_dataCapture::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-data_tools_dataCapture-Release-42d67c0949023705ff6c.json",
+					"name" : "data_tools_dataCapture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "data_tools_dataPublish::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-data_tools_dataPublish-Release-ca1495791e19101de2b3.json",
+					"name" : "data_tools_dataPublish",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "data_tools_dataSync::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-data_tools_dataSync-Release-21a882380d7f6389ea0a.json",
+					"name" : "data_tools_dataSync",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "data_tools_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-data_tools_uninstall-Release-3c47c334adaacc968104.json",
+					"name" : "data_tools_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-97091d492244b6f85f49.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/nas/projects/robot/pika_ros/build/data_tools",
+		"source" : "/mnt/nas/projects/robot/pika_ros/src/data_tools"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

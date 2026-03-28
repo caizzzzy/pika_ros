@@ -1,0 +1,474 @@
+[0.055s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/data_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake /mnt/nas/projects/robot/pika_ros/src/data_msgs -DCMAKE_INSTALL_PREFIX=/mnt/nas/projects/robot/pika_ros/install/data_msgs
+[0.613s] -- The C compiler identification is GNU 11.4.0
+[0.614s] -- The CXX compiler identification is GNU 11.4.0
+[0.614s] -- Detecting C compiler ABI info
+[0.614s] -- Detecting C compiler ABI info - done
+[0.614s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.614s] -- Detecting C compile features
+[0.614s] -- Detecting C compile features - done
+[0.614s] -- Detecting CXX compiler ABI info
+[0.614s] -- Detecting CXX compiler ABI info - done
+[0.614s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.615s] -- Detecting CXX compile features
+[0.615s] -- Detecting CXX compile features - done
+[0.615s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.826s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.433s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.466s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.537s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.739s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.909s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[2.189s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.209s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.437s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.489s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.574s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.644s] -- Looking for pthread.h
+[2.773s] -- Looking for pthread.h - found
+[2.774s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.904s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.906s] -- Found Threads: TRUE  
+[3.040s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[3.069s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[3.181s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.678s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.135s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.830s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.861s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.880s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.917s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.917s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.918s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.918s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.949s] -- Found PythonExtra: .so  
+[5.082s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.261s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.270s] -- Added test 'lint_cmake' to check CMake code style
+[5.275s] -- Added test 'xmllint' to check XML markup files
+[5.295s] -- Configuring done
+[5.605s] -- Generating done
+[5.661s] -- Build files have been written to: /mnt/nas/projects/robot/pika_ros/build/data_msgs
+[5.677s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/data_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake /mnt/nas/projects/robot/pika_ros/src/data_msgs -DCMAKE_INSTALL_PREFIX=/mnt/nas/projects/robot/pika_ros/install/data_msgs
+[5.683s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/data_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/data_msgs -- -j128 -l128
+[5.697s] gmake: 警告：文件“Makefile”的修改时间在未来 168 秒后
+[5.733s] gmake[1]: 警告：文件“CMakeFiles/Makefile2”的修改时间在未来 168 秒后
+[5.738s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__cpp.dir/progress.make”的修改时间在未来 168 秒后
+[5.739s] gmake[2]: 警告：文件“CMakeFiles/ament_cmake_python_copy_data_msgs.dir/progress.make”的修改时间在未来 168 秒后
+[5.740s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_generator_c.dir/flags.make”的修改时间在未来 168 秒后
+[5.753s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.753s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[5.754s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[5.862s] gmake[2]: 警告：文件“CMakeFiles/ament_cmake_python_copy_data_msgs.dir/progress.make”的修改时间在未来 168 秒后
+[5.863s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__cpp.dir/progress.make”的修改时间在未来 168 秒后
+[6.071s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.497s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[6.583s] [  2%] Built target ament_cmake_python_copy_data_msgs
+[6.831s] gmake[2]: 警告：文件“CMakeFiles/ament_cmake_python_build_data_msgs_egg.dir/progress.make”的修改时间在未来 167 秒后
+[6.993s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[7.141s] gmake[2]: 警告：文件“CMakeFiles/ament_cmake_python_build_data_msgs_egg.dir/progress.make”的修改时间在未来 167 秒后
+[8.729s] running egg_info
+[8.731s] creating data_msgs.egg-info
+[8.731s] writing data_msgs.egg-info/PKG-INFO
+[8.732s] writing dependency_links to data_msgs.egg-info/dependency_links.txt
+[8.734s] writing top-level names to data_msgs.egg-info/top_level.txt
+[8.735s] writing manifest file 'data_msgs.egg-info/SOURCES.txt'
+[8.739s] reading manifest file 'data_msgs.egg-info/SOURCES.txt'
+[8.740s] writing manifest file 'data_msgs.egg-info/SOURCES.txt'
+[8.765s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[8.777s] [  2%] Built target ament_cmake_python_build_data_msgs_egg
+[8.778s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[8.787s] [  2%] Built target data_msgs__cpp
+[8.793s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_cpp.dir/flags.make”的修改时间在未来 165 秒后
+[8.794s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[8.794s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make”的修改时间在未来 165 秒后
+[8.795s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make”的修改时间在未来 165 秒后
+[8.797s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_generator_c.dir/flags.make”的修改时间在未来 165 秒后
+[8.803s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.806s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.808s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.812s] [ 12%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_c.dir/rosidl_generator_c/data_msgs/msg/detail/gripper__functions.c.o[0m
+[8.813s] [ 12%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_c.dir/rosidl_generator_c/data_msgs/msg/detail/arm_control_status__functions.c.o[0m
+[8.813s] [ 14%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_c.dir/rosidl_generator_c/data_msgs/msg/detail/localization_status__functions.c.o[0m
+[8.814s] [ 14%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_c.dir/rosidl_generator_c/data_msgs/msg/detail/capture_status__functions.c.o[0m
+[8.814s] [ 14%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_c.dir/rosidl_generator_c/data_msgs/msg/detail/teleop_status__functions.c.o[0m
+[8.815s] [ 15%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_c.dir/rosidl_generator_c/data_msgs/srv/detail/capture_service__functions.c.o[0m
+[8.990s] [ 16%] [32m[1mLinking C shared library libdata_msgs__rosidl_generator_c.so[0m
+[9.038s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.054s] [ 16%] Built target data_msgs__rosidl_generator_c
+[9.061s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make”的修改时间在未来 165 秒后
+[9.063s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_introspection_c.dir/flags.make”的修改时间在未来 165 秒后
+[9.063s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_c.dir/flags.make”的修改时间在未来 165 秒后
+[9.074s] [ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.075s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[9.076s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[9.138s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.143s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_cpp.dir/flags.make”的修改时间在未来 165 秒后
+[9.157s] [ 22%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_msgs/msg/gripper__type_support.cpp.o[0m
+[9.158s] [ 23%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_msgs/msg/arm_control_status__type_support.cpp.o[0m
+[9.161s] [ 28%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_msgs/msg/capture_status__type_support.cpp.o[0m
+[9.161s] [ 28%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_msgs/msg/teleop_status__type_support.cpp.o[0m
+[9.161s] [ 29%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_msgs/msg/localization_status__type_support.cpp.o[0m
+[9.162s] [ 29%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/data_msgs/srv/capture_service__type_support.cpp.o[0m
+[9.178s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.183s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make”的修改时间在未来 165 秒后
+[9.196s] [ 30%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_msgs/msg/detail/gripper__type_support.cpp.o[0m
+[9.197s] [ 33%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_msgs/msg/detail/arm_control_status__type_support.cpp.o[0m
+[9.199s] [ 36%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_msgs/msg/detail/capture_status__type_support.cpp.o[0m
+[9.199s] [ 36%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_msgs/srv/detail/capture_service__type_support.cpp.o[0m
+[9.199s] [ 36%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_msgs/msg/detail/localization_status__type_support.cpp.o[0m
+[9.200s] [ 38%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/data_msgs/msg/detail/teleop_status__type_support.cpp.o[0m
+[9.318s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.323s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make”的修改时间在未来 164 秒后
+[9.335s] [ 39%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_msgs/msg/detail/dds_fastrtps/gripper__type_support.cpp.o[0m
+[9.336s] [ 42%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_msgs/msg/detail/dds_fastrtps/localization_status__type_support.cpp.o[0m
+[9.336s] [ 42%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_msgs/msg/detail/dds_fastrtps/capture_status__type_support.cpp.o[0m
+[9.337s] [ 43%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_msgs/msg/detail/dds_fastrtps/teleop_status__type_support.cpp.o[0m
+[9.338s] [ 45%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_msgs/msg/detail/dds_fastrtps/arm_control_status__type_support.cpp.o[0m
+[9.341s] [ 46%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/data_msgs/srv/detail/dds_fastrtps/capture_service__type_support.cpp.o[0m
+[9.469s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.473s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_c.dir/flags.make”的修改时间在未来 164 秒后
+[9.486s] [ 49%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_msgs/msg/teleop_status__type_support.cpp.o[0m
+[9.487s] [ 50%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_msgs/msg/localization_status__type_support.cpp.o[0m
+[9.487s] [ 50%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_msgs/msg/gripper__type_support.cpp.o[0m
+[9.489s] [ 54%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_msgs/msg/capture_status__type_support.cpp.o[0m
+[9.489s] [ 54%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_msgs/msg/arm_control_status__type_support.cpp.o[0m
+[9.490s] [ 54%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/data_msgs/srv/capture_service__type_support.cpp.o[0m
+[9.538s] [ 56%] [32m[1mLinking CXX shared library libdata_msgs__rosidl_typesupport_c.so[0m
+[9.586s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.600s] [ 57%] [32m[1mLinking CXX shared library libdata_msgs__rosidl_typesupport_cpp.so[0m
+[9.602s] [ 57%] Built target data_msgs__rosidl_typesupport_c
+[9.643s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.649s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.654s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_introspection_c.dir/flags.make”的修改时间在未来 164 秒后
+[9.661s] [ 57%] Built target data_msgs__rosidl_typesupport_cpp
+[9.666s] [ 60%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_msgs/msg/detail/teleop_status__type_support.c.o[0m
+[9.666s] [ 60%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_msgs/msg/detail/capture_status__type_support.c.o[0m
+[9.667s] [ 61%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_msgs/msg/detail/gripper__type_support.c.o[0m
+[9.669s] [ 63%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_msgs/msg/detail/localization_status__type_support.c.o[0m
+[9.671s] [ 66%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_msgs/msg/detail/arm_control_status__type_support.c.o[0m
+[9.671s] [ 66%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/data_msgs/srv/detail/capture_service__type_support.c.o[0m
+[9.743s] [ 67%] [32m[1mLinking C shared library libdata_msgs__rosidl_typesupport_introspection_c.so[0m
+[9.749s] [ 69%] [32m[1mLinking CXX shared library libdata_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[9.782s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.801s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.803s] [ 69%] Built target data_msgs__rosidl_typesupport_introspection_c
+[9.806s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make”的修改时间在未来 164 秒后
+[9.818s] [ 71%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_msgs/msg/detail/gripper__type_support_c.cpp.o[0m
+[9.818s] [ 71%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_msgs/msg/detail/capture_status__type_support_c.cpp.o[0m
+[9.821s] [ 74%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_msgs/msg/detail/arm_control_status__type_support_c.cpp.o[0m
+[9.821s] [ 74%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_msgs/msg/detail/teleop_status__type_support_c.cpp.o[0m
+[9.822s] [ 76%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_msgs/msg/detail/localization_status__type_support_c.cpp.o[0m
+[9.824s] [ 77%] [32mBuilding CXX object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/data_msgs/srv/detail/capture_service__type_support_c.cpp.o[0m
+[9.837s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.855s] [ 77%] Built target data_msgs__rosidl_typesupport_introspection_cpp
+[9.963s] [ 78%] [32m[1mLinking CXX shared library libdata_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[10.051s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[10.069s] [ 78%] Built target data_msgs__rosidl_typesupport_fastrtps_cpp
+[10.249s] [ 80%] [32m[1mLinking CXX shared library libdata_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[10.336s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[10.355s] [ 80%] Built target data_msgs__rosidl_typesupport_fastrtps_c
+[10.360s] gmake[2]: 警告：文件“CMakeFiles/data_msgs.dir/progress.make”的修改时间在未来 164 秒后
+[10.375s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[10.379s] gmake[2]: 警告：文件“CMakeFiles/data_msgs.dir/progress.make”的修改时间在未来 164 秒后
+[10.379s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[10.392s] [ 80%] Built target data_msgs
+[10.398s] gmake[2]: 警告：文件“data_msgs__py/CMakeFiles/data_msgs__py.dir/progress.make”的修改时间在未来 164 秒后
+[10.410s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[10.415s] gmake[2]: 警告：文件“data_msgs__py/CMakeFiles/data_msgs__py.dir/progress.make”的修改时间在未来 163 秒后
+[10.429s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[11.300s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.312s] [ 81%] Built target data_msgs__py
+[11.319s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_generator_py.dir/flags.make”的修改时间在未来 163 秒后
+[11.335s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.340s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_generator_py.dir/flags.make”的修改时间在未来 162 秒后
+[11.354s] [ 83%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_py.dir/rosidl_generator_py/data_msgs/msg/_teleop_status_s.c.o[0m
+[11.355s] [ 85%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_py.dir/rosidl_generator_py/data_msgs/msg/_capture_status_s.c.o[0m
+[11.356s] [ 85%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_py.dir/rosidl_generator_py/data_msgs/msg/_gripper_s.c.o[0m
+[11.357s] [ 90%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_py.dir/rosidl_generator_py/data_msgs/msg/_localization_status_s.c.o[0m
+[11.357s] [ 90%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_py.dir/rosidl_generator_py/data_msgs/msg/_arm_control_status_s.c.o[0m
+[11.357s] [ 90%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_generator_py.dir/rosidl_generator_py/data_msgs/srv/_capture_service_s.c.o[0m
+[11.579s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/data_msgs/libdata_msgs__rosidl_generator_py.so[0m
+[11.632s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.649s] [ 91%] Built target data_msgs__rosidl_generator_py
+[11.656s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/flags.make”的修改时间在未来 162 秒后
+[11.656s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_c__pyext.dir/flags.make”的修改时间在未来 162 秒后
+[11.656s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_introspection_c__pyext.dir/flags.make”的修改时间在未来 162 秒后
+[11.667s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.669s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.671s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/flags.make”的修改时间在未来 162 秒后
+[11.672s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.674s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_c__pyext.dir/flags.make”的修改时间在未来 162 秒后
+[11.678s] gmake[2]: 警告：文件“CMakeFiles/data_msgs__rosidl_typesupport_introspection_c__pyext.dir/flags.make”的修改时间在未来 162 秒后
+[11.687s] [ 94%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/data_msgs/_data_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.687s] [ 94%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/data_msgs/_data_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[11.692s] [ 95%] [32mBuilding C object CMakeFiles/data_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/data_msgs/_data_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.876s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/data_msgs/data_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.904s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/data_msgs/data_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.905s] [100%] [32m[1mLinking C shared library rosidl_generator_py/data_msgs/data_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.921s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.933s] [100%] Built target data_msgs__rosidl_typesupport_introspection_c__pyext
+[11.952s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.953s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.964s] [100%] Built target data_msgs__rosidl_typesupport_c__pyext
+[11.965s] [100%] Built target data_msgs__rosidl_typesupport_fastrtps_c__pyext
+[11.967s] gmake[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.988s] gmake: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[11.992s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/data_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/data_msgs -- -j128 -l128
+[11.999s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/data_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/data_msgs
+[12.006s] -- Install configuration: "Release"
+[12.006s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/ament_index/resource_index/rosidl_interfaces/data_msgs
+[12.008s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs
+[12.008s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg
+[12.009s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/gripper.h
+[12.010s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail
+[12.011s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__functions.c
+[12.013s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__functions.h
+[12.014s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__struct.h
+[12.016s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__type_support.h
+[12.017s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__functions.c
+[12.019s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__functions.h
+[12.021s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__struct.h
+[12.022s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__type_support.h
+[12.024s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__functions.c
+[12.025s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__functions.h
+[12.027s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__struct.h
+[12.029s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__type_support.h
+[12.030s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__functions.c
+[12.033s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__functions.h
+[12.034s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__struct.h
+[12.036s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__type_support.h
+[12.038s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__functions.c
+[12.039s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__functions.h
+[12.041s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__struct.h
+[12.043s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__type_support.h
+[12.045s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.047s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/capture_status.h
+[12.049s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/teleop_status.h
+[12.051s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/localization_status.h
+[12.053s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/arm_control_status.h
+[12.054s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv
+[12.054s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/capture_service.h
+[12.056s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail
+[12.057s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__functions.c
+[12.059s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__functions.h
+[12.061s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__struct.h
+[12.063s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__type_support.h
+[12.065s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/environment/library_path.sh
+[12.067s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/environment/library_path.dsv
+[12.069s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_generator_c.so
+[12.073s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_generator_c.so" to ""
+[12.073s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs
+[12.074s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg
+[12.075s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail
+[12.076s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__rosidl_typesupport_fastrtps_c.h
+[12.078s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__rosidl_typesupport_fastrtps_c.h
+[12.079s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__rosidl_typesupport_fastrtps_c.h
+[12.081s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__rosidl_typesupport_fastrtps_c.h
+[12.082s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__rosidl_typesupport_fastrtps_c.h
+[12.084s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.086s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv
+[12.087s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail
+[12.087s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__rosidl_typesupport_fastrtps_c.h
+[12.089s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_fastrtps_c.so
+[12.094s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[12.094s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs
+[12.095s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg
+[12.095s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail
+[12.096s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__rosidl_typesupport_introspection_c.h
+[12.098s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__type_support.c
+[12.099s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__rosidl_typesupport_introspection_c.h
+[12.100s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__type_support.c
+[12.102s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__rosidl_typesupport_introspection_c.h
+[12.103s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__type_support.c
+[12.105s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__rosidl_typesupport_introspection_c.h
+[12.106s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__type_support.c
+[12.108s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__rosidl_typesupport_introspection_c.h
+[12.109s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__type_support.c
+[12.111s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.112s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv
+[12.112s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail
+[12.113s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__rosidl_typesupport_introspection_c.h
+[12.114s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__type_support.c
+[12.117s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_introspection_c.so
+[12.122s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_introspection_c.so" to ""
+[12.123s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_c.so
+[12.128s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_c.so" to ""
+[12.128s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs
+[12.128s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg
+[12.129s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/gripper.hpp
+[12.130s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail
+[12.131s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__builder.hpp
+[12.133s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__struct.hpp
+[12.134s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__traits.hpp
+[12.136s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__type_support.hpp
+[12.137s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__builder.hpp
+[12.139s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__struct.hpp
+[12.140s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__traits.hpp
+[12.142s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__type_support.hpp
+[12.144s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__builder.hpp
+[12.145s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__struct.hpp
+[12.147s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__traits.hpp
+[12.149s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__type_support.hpp
+[12.151s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__builder.hpp
+[12.153s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__struct.hpp
+[12.155s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__traits.hpp
+[12.157s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__type_support.hpp
+[12.159s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__builder.hpp
+[12.160s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__struct.hpp
+[12.162s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__traits.hpp
+[12.164s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__type_support.hpp
+[12.165s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.166s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/capture_status.hpp
+[12.168s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/teleop_status.hpp
+[12.170s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/localization_status.hpp
+[12.172s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/arm_control_status.hpp
+[12.174s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv
+[12.174s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/capture_service.hpp
+[12.176s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail
+[12.176s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__builder.hpp
+[12.178s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__struct.hpp
+[12.180s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__traits.hpp
+[12.183s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__type_support.hpp
+[12.185s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs
+[12.186s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg
+[12.186s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail
+[12.187s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__rosidl_typesupport_fastrtps_cpp.hpp
+[12.189s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/dds_fastrtps
+[12.190s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__rosidl_typesupport_fastrtps_cpp.hpp
+[12.192s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__rosidl_typesupport_fastrtps_cpp.hpp
+[12.194s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__rosidl_typesupport_fastrtps_cpp.hpp
+[12.196s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__rosidl_typesupport_fastrtps_cpp.hpp
+[12.198s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.200s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv
+[12.201s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail
+[12.202s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__rosidl_typesupport_fastrtps_cpp.hpp
+[12.204s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/dds_fastrtps
+[12.206s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_fastrtps_cpp.so
+[12.212s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.212s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs
+[12.212s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg
+[12.213s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail
+[12.214s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__rosidl_typesupport_introspection_cpp.hpp
+[12.216s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/gripper__type_support.cpp
+[12.218s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__rosidl_typesupport_introspection_cpp.hpp
+[12.220s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/capture_status__type_support.cpp
+[12.222s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__rosidl_typesupport_introspection_cpp.hpp
+[12.224s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/teleop_status__type_support.cpp
+[12.226s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__rosidl_typesupport_introspection_cpp.hpp
+[12.228s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/localization_status__type_support.cpp
+[12.230s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__rosidl_typesupport_introspection_cpp.hpp
+[12.232s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/msg/detail/arm_control_status__type_support.cpp
+[12.233s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv
+[12.234s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail
+[12.234s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__rosidl_typesupport_introspection_cpp.hpp
+[12.236s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/include/data_msgs/data_msgs/srv/detail/capture_service__type_support.cpp
+[12.239s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_introspection_cpp.so
+[12.244s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[12.246s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_cpp.so
+[12.249s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_typesupport_cpp.so" to ""
+[12.249s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/environment/pythonpath.sh
+[12.251s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/environment/pythonpath.dsv
+[12.252s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs-0.0.0-py3.10.egg-info
+[12.253s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[12.254s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[12.255s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[12.257s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[12.258s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs
+[12.259s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/__init__.py
+[12.260s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg
+[12.260s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_gripper.py
+[12.262s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_gripper_s.c
+[12.264s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_capture_status.py
+[12.266s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_capture_status_s.c
+[12.268s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_teleop_status.py
+[12.270s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_teleop_status_s.c
+[12.271s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_localization_status.py
+[12.273s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_localization_status_s.c
+[12.274s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_arm_control_status.py
+[12.276s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_arm_control_status_s.c
+[12.277s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/__init__.py
+[12.279s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/srv
+[12.279s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/srv/_capture_service.py
+[12.281s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/srv/_capture_service_s.c
+[12.283s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/srv/__init__.py
+[12.285s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/_data_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.287s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/_data_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[12.288s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/_data_msgs_s.ep.rosidl_typesupport_c.c
+[12.290s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/libdata_msgs__rosidl_generator_py.so
+[12.292s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.294s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.298s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.373s] Listing '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs'...
+[12.373s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/__init__.py'...
+[12.373s] Listing '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg'...
+[12.373s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/__init__.py'...
+[12.373s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_arm_control_status.py'...
+[12.374s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_capture_status.py'...
+[12.374s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_gripper.py'...
+[12.374s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_localization_status.py'...
+[12.374s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/msg/_teleop_status.py'...
+[12.374s] Listing '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/srv'...
+[12.374s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/srv/__init__.py'...
+[12.374s] Compiling '/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/srv/_capture_service.py'...
+[12.379s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.384s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.386s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.390s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.392s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.397s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages/data_msgs/data_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.398s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_generator_py.so
+[12.403s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib/libdata_msgs__rosidl_generator_py.so" to ""
+[12.404s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/Gripper.idl
+[12.405s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/CaptureStatus.idl
+[12.407s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/TeleopStatus.idl
+[12.408s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/LocalizationStatus.idl
+[12.410s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/ArmControlStatus.idl
+[12.411s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/srv/CaptureService.idl
+[12.413s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/Gripper.msg
+[12.415s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/CaptureStatus.msg
+[12.416s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/TeleopStatus.msg
+[12.418s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/LocalizationStatus.msg
+[12.419s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/msg/ArmControlStatus.msg
+[12.421s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/srv/CaptureService.srv
+[12.423s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/srv/CaptureService_Request.msg
+[12.424s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/srv/CaptureService_Response.msg
+[12.426s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/ament_index/resource_index/package_run_dependencies/data_msgs
+[12.428s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/ament_index/resource_index/parent_prefix_path/data_msgs
+[12.429s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/environment/ament_prefix_path.sh
+[12.430s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/environment/ament_prefix_path.dsv
+[12.432s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/environment/path.sh
+[12.433s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/environment/path.dsv
+[12.434s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/local_setup.bash
+[12.436s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/local_setup.sh
+[12.437s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/local_setup.zsh
+[12.439s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/local_setup.dsv
+[12.440s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/package.dsv
+[12.441s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/ament_index/resource_index/packages/data_msgs
+[12.443s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_generator_cExport.cmake
+[12.445s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_generator_cExport-release.cmake
+[12.447s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[12.449s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[12.450s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgs__rosidl_typesupport_introspection_cExport.cmake
+[12.452s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[12.454s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgs__rosidl_typesupport_cExport.cmake
+[12.455s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgs__rosidl_typesupport_cExport-release.cmake
+[12.457s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_generator_cppExport.cmake
+[12.459s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.461s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[12.463s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[12.465s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[12.467s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgs__rosidl_typesupport_cppExport.cmake
+[12.468s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgs__rosidl_typesupport_cppExport-release.cmake
+[12.470s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_generator_pyExport.cmake
+[12.472s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/export_data_msgs__rosidl_generator_pyExport-release.cmake
+[12.473s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/rosidl_cmake-extras.cmake
+[12.474s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.476s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.477s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[12.479s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[12.480s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.481s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.482s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgsConfig.cmake
+[12.483s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake/data_msgsConfig-version.cmake
+[12.485s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/package.xml
+[12.490s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/data_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/data_msgs

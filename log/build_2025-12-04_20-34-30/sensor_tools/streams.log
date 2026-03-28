@@ -1,0 +1,220 @@
+[0.595s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/sensor_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake /mnt/nas/projects/robot/pika_ros/src/sensor_tools -DCMAKE_INSTALL_PREFIX=/mnt/nas/projects/robot/pika_ros/install/sensor_tools
+[0.677s] -- The C compiler identification is GNU 11.4.0
+[0.754s] -- The CXX compiler identification is GNU 11.4.0
+[0.765s] -- Detecting C compiler ABI info
+[0.906s] -- Detecting C compiler ABI info - done
+[1.014s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.014s] -- Detecting C compile features
+[1.015s] -- Detecting C compile features - done
+[1.071s] -- Detecting CXX compiler ABI info
+[1.383s] -- Detecting CXX compiler ABI info - done
+[1.394s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.395s] -- Detecting CXX compile features
+[1.395s] -- Detecting CXX compile features - done
+[1.422s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.666s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.024s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[2.222s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.258s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.297s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.334s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.397s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.591s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.610s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.838s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.891s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.972s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.046s] -- Looking for pthread.h
+[3.186s] -- Looking for pthread.h - found
+[3.188s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.331s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.333s] -- Found Threads: TRUE  
+[3.474s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[3.486s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[3.604s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[3.636s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.672s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.708s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[3.808s] -- Checking for module 'eigen3'
+[3.825s] --   Found eigen3, version 3.4.0
+[3.880s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[3.880s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.033s] -- Checking for module 'flann'
+[4.053s] --   Found flann, version 1.9.1
+[4.116s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[4.116s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[5.959s] -- Checking for module 'libusb-1.0'
+[5.985s] --   Found libusb-1.0, version 1.0.25
+[6.047s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[6.048s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.627s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.842s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.851s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.860s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.128s] -- Found Qhull version 8.0.2
+[7.313s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.489s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[7.490s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[7.491s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[7.492s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[7.493s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[7.494s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[7.494s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[7.495s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[7.496s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[7.497s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[7.498s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[7.499s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[7.500s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[7.501s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[7.502s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[7.503s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[7.504s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[7.505s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[7.506s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[7.507s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[7.508s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[7.508s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[7.509s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[7.509s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[7.511s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[8.636s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[8.688s] -- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[8.790s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[8.793s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[8.793s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[9.087s] -- Found tf2_sensor_msgs: 0.25.17 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[9.112s] -- Found tf2_eigen: 0.25.17 (/opt/ros/humble/share/tf2_eigen/cmake)
+[9.121s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[9.127s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system 
+[9.128s] -- Checking for module 'jsoncpp'
+[9.151s] --   Found jsoncpp, version 1.9.5
+[9.226s] -- Found data_msgs: 0.0.0 (/mnt/nas/projects/robot/pika_ros/install/data_msgs/share/data_msgs/cmake)
+[9.290s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.620s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.621s] -- Configured cppcheck include dirs: /mnt/nas/projects/robot/pika_ros/src/sensor_tools/include
+[9.621s] -- Configured cppcheck exclude dirs and/or files: 
+[9.623s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.627s] -- Added test 'lint_cmake' to check CMake code style
+[9.631s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[9.641s] -- Added test 'uncrustify' to check C / C++ code style
+[9.641s] -- Configured uncrustify additional arguments: 
+[9.644s] -- Added test 'xmllint' to check XML markup files
+[9.654s] -- Configuring done
+[9.759s] -- Generating done
+[9.812s] -- Build files have been written to: /mnt/nas/projects/robot/pika_ros/build/sensor_tools
+[9.834s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/sensor_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake /mnt/nas/projects/robot/pika_ros/src/sensor_tools -DCMAKE_INSTALL_PREFIX=/mnt/nas/projects/robot/pika_ros/install/sensor_tools
+[9.843s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/sensor_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/sensor_tools -- -j128 -l128
+[9.855s] gmake: 警告：文件“Makefile”的修改时间在未来 168 秒后
+[9.891s] gmake[1]: 警告：文件“CMakeFiles/Makefile2”的修改时间在未来 168 秒后
+[9.897s] gmake[2]: 警告：文件“CMakeFiles/serial_gripper_imu.dir/flags.make”的修改时间在未来 168 秒后
+[9.911s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[9.916s] gmake[2]: 警告：文件“CMakeFiles/serial_gripper_imu.dir/flags.make”的修改时间在未来 168 秒后
+[9.929s] [ 50%] [32mBuilding CXX object CMakeFiles/serial_gripper_imu.dir/src/serial_gripper_imu.cpp.o[0m
+[13.924s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:[m[K In function ‘[01m[Kbool find_json(std::string&, int&, int&)[m[K’:
+[13.924s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:69:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::__cxx11::basic_string<char>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[13.924s]    69 |         for(int i=0; [01;35m[Ki<msg.size()[m[K; i++){
+[13.924s]       |                      [01;35m[K~^~~~~~~~~~~[m[K
+[13.924s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:68:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcount[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[13.925s]    68 |         int [01;35m[Kcount[m[K = 0;
+[13.925s]       |             [01;35m[K^~~~~[m[K
+[14.301s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:[m[K In member function ‘[01m[Kvoid RosOperator::jointStateCtrlHandler(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.302s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:437:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KmotorCurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.302s]   437 |                 float [01;35m[KmotorCurrent[m[K = this->motorCurrent;
+[14.302s]       |                       [01;35m[K^~~~~~~~~~~~[m[K
+[14.302s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:438:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KmotorAngle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.302s]   438 |                 float [01;35m[KmotorAngle[m[K = this->angle;
+[14.302s]       |                       [01;35m[K^~~~~~~~~~[m[K
+[14.304s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:[m[K In member function ‘[01m[Kvoid RosOperator::gripperCtrlHandler(data_msgs::msg::Gripper_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.304s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:497:128:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->data_msgs::msg::Gripper_<std::allocator<void> >::effort[m[K’ from ‘[01m[Kdata_msgs::msg::Gripper_<std::allocator<void> >::_effort_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[14.305s]   497 |                                 std::vector<uint8_t> command = createBinaryCommand<float>(EFFORT_CTRL, std::vector<float>{[01;35m[Kmsg->effort[m[K});
+[14.305s]       |                                                                                                                           [01;35m[K~~~~~^~~~~~[m[K
+[14.305s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:497:128:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->data_msgs::msg::Gripper_<std::allocator<void> >::effort[m[K’ from ‘[01m[Kdata_msgs::msg::Gripper_<std::allocator<void> >::_effort_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[14.305s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:506:130:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->data_msgs::msg::Gripper_<std::allocator<void> >::velocity[m[K’ from ‘[01m[Kdata_msgs::msg::Gripper_<std::allocator<void> >::_velocity_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[14.305s]   506 |                                 std::vector<uint8_t> command = createBinaryCommand<float>(VELOCITY_CTRL, std::vector<float>{[01;35m[Kmsg->velocity[m[K, msg->velocity});
+[14.305s]       |                                                                                                                             [01;35m[K~~~~~^~~~~~~~[m[K
+[14.305s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:506:130:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->data_msgs::msg::Gripper_<std::allocator<void> >::velocity[m[K’ from ‘[01m[Kdata_msgs::msg::Gripper_<std::allocator<void> >::_velocity_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[14.305s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:506:145:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->data_msgs::msg::Gripper_<std::allocator<void> >::velocity[m[K’ from ‘[01m[Kdata_msgs::msg::Gripper_<std::allocator<void> >::_velocity_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[14.305s]   506 |                                 std::vector<uint8_t> command = createBinaryCommand<float>(VELOCITY_CTRL, std::vector<float>{msg->velocity, [01;35m[Kmsg->velocity[m[K});
+[14.305s]       |                                                                                                                                            [01;35m[K~~~~~^~~~~~~~[m[K
+[14.305s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:506:145:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K((const std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<data_msgs::msg::Gripper_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->data_msgs::msg::Gripper_<std::allocator<void> >::velocity[m[K’ from ‘[01m[Kdata_msgs::msg::Gripper_<std::allocator<void> >::_velocity_type[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[14.305s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:524:31:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KmotorCurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.306s]   524 |                         float [01;35m[KmotorCurrent[m[K = this->motorCurrent;
+[14.306s]       |                               [01;35m[K^~~~~~~~~~~~[m[K
+[14.306s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:525:31:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KmotorAngle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.306s]   525 |                         float [01;35m[KmotorAngle[m[K = this->angle;
+[14.306s]       |                               [01;35m[K^~~~~~~~~~[m[K
+[14.308s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:[m[K In member function ‘[01m[Kvoid RosOperator::receiving()[m[K’:
+[14.308s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:664:52:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::__cxx11::basic_string<char>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[14.308s]   664 |                                         if([01;35m[Kend + 1 < msg.size()[m[K)
+[14.308s]       |                                            [01;35m[K~~~~~~~~^~~~~~~~~~~~[m[K
+[14.499s] /mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp: In instantiation of ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > RosOperator::createBinaryCommand(uint8_t, std::vector<BufferT>, bool) [with T = float; uint8_t = unsigned char][m[K’:
+[14.500s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:280:61:[m[K   required from here
+[14.500s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:153:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[14.500s]   153 |                         for(int i=0; [01;35m[Ki<values.size()[m[K; i++){
+[14.500s]       |                                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[14.500s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:171:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[14.500s]   171 |                         for(int i=0; [01;35m[Ki<values.size()[m[K; i++){
+[14.501s]       |                                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[14.501s] /mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp: In instantiation of ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > RosOperator::createBinaryCommand(uint8_t, std::vector<BufferT>, bool) [with T = int; uint8_t = unsigned char][m[K’:
+[14.501s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:325:60:[m[K   required from here
+[14.501s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:153:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[14.501s]   153 |                         for(int i=0; [01;35m[Ki<values.size()[m[K; i++){
+[14.501s]       |                                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[14.502s] [01m[K/mnt/nas/projects/robot/pika_ros/src/sensor_tools/src/serial_gripper_imu.cpp:171:39:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[14.502s]   171 |                         for(int i=0; [01;35m[Ki<values.size()[m[K; i++){
+[14.502s]       |                                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[34.241s] [100%] [32m[1mLinking CXX executable serial_gripper_imu[0m
+[36.622s] gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[36.637s] [100%] Built target serial_gripper_imu
+[36.637s] gmake[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[36.649s] gmake: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+[36.652s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/sensor_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --build /mnt/nas/projects/robot/pika_ros/build/sensor_tools -- -j128 -l128
+[36.658s] Invoking command in '/mnt/nas/projects/robot/pika_ros/build/sensor_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/sensor_tools
+[36.665s] -- Install configuration: ""
+[36.665s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch
+[36.665s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_fisheye.launch.py
+[36.667s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_multi_gripper.launch.py
+[36.669s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_multi_sensor.launch.py
+[36.670s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_sensor_gripper.launch.py
+[36.672s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_single_gripper.launch.py
+[36.673s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//launch/open_single_sensor.launch.py
+[36.675s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts
+[36.675s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/find_usb_camera.py
+[36.677s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/multi_transmit_topics.py
+[36.679s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/pika_localization_setup.bash
+[36.680s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/setup_device.py
+[36.682s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/setup_multi_gripper.bash
+[36.683s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/setup_multi_sensor.bash
+[36.685s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/setup_sensor_gripper.bash
+[36.686s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/single_transmit_topics.py
+[36.687s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_multi_gripper.bash
+[36.689s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_multi_sensor.bash
+[36.690s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_sensor_gripper.bash
+[36.691s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_single_gripper.bash
+[36.692s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/start_single_sensor.bash
+[36.694s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/usb_camera.py
+[36.696s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/81-vive.rules
+[36.697s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools//scripts/calibration.bash
+[36.701s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/lib/sensor_tools/serial_gripper_imu
+[36.827s] -- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/sensor_tools/lib/sensor_tools/serial_gripper_imu" to ""
+[36.828s] -- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/include
+[36.828s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/include/.keep
+[36.829s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/lib/sensor_tools/usb_camera.py
+[36.831s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/ament_index/resource_index/package_run_dependencies/sensor_tools
+[36.833s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/ament_index/resource_index/parent_prefix_path/sensor_tools
+[36.834s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/environment/ament_prefix_path.sh
+[36.835s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/environment/ament_prefix_path.dsv
+[36.836s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/environment/path.sh
+[36.838s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/environment/path.dsv
+[36.839s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/local_setup.bash
+[36.840s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/local_setup.sh
+[36.842s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/local_setup.zsh
+[36.843s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/local_setup.dsv
+[36.845s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/package.dsv
+[36.846s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/ament_index/resource_index/packages/sensor_tools
+[36.848s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/cmake/ament_cmake_export_include_directories-extras.cmake
+[36.849s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/cmake/sensor_toolsConfig.cmake
+[36.850s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/cmake/sensor_toolsConfig-version.cmake
+[36.851s] -- Installing: /mnt/nas/projects/robot/pika_ros/install/sensor_tools/share/sensor_tools/package.xml
+[36.856s] Invoked command in '/mnt/nas/projects/robot/pika_ros/build/sensor_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/piper:/opt/ros/humble /usr/bin/cmake --install /mnt/nas/projects/robot/pika_ros/build/sensor_tools

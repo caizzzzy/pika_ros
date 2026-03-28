@@ -1,0 +1,63 @@
+[35m[1mConsolidate compiler generated dependencies of target data_tools_dataCapture[0m
+[35m[1mConsolidate compiler generated dependencies of target data_tools_dataPublish[0m
+[35m[1mConsolidate compiler generated dependencies of target data_tools_dataSync[0m
+[ 16%] [32m[1mLinking CXX executable data_tools_dataCapture[0m
+[ 33%] [32m[1mLinking CXX executable data_tools_dataSync[0m
+[ 50%] [32m[1mLinking CXX executable data_tools_dataPublish[0m
+[ 66%] Built target data_tools_dataSync
+[ 83%] Built target data_tools_dataPublish
+[100%] Built target data_tools_dataCapture
+-- Install configuration: "Release"
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_aloha_data_capture_to_mcap.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_compress_camera.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_capture.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_capture_to_mcap.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_publish.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_sync.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_lift_data_capture_to_mcap.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_multi_data_capture_to_mcap.launch.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/aloha_data_params.yaml
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/lift_data_params.yaml
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/multi_pika_data_params.yaml
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/multi_pika_teleop_data_params.yaml
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_data_params.yaml
+-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_teleop_data_params.yaml
+-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataCapture
+-- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataCapture" to ""
+-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataSync
+-- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataSync" to ""
+-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataPublish
+-- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataPublish" to ""
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include/blockingDeque.h
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include/dataUtility.h
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/aloha_data_to_mcap.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/camera_point_cloud_filter.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/compress_camera.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_publish.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_refacctoring_tar.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_sync.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_to_hdf5.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/hdf5_to_lerobot.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/hdf5_to_mcap.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/load_data_example.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/mcap_to_aloha_data.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/record_mcap.py
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/package_run_dependencies/data_tools
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/parent_prefix_path/data_tools
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/ament_prefix_path.sh
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/ament_prefix_path.dsv
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/path.sh
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/path.dsv
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.bash
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.sh
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.zsh
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.dsv
+-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/package.dsv
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/packages/data_tools
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/data_toolsConfig.cmake
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/data_toolsConfig-version.cmake
+-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/package.xml

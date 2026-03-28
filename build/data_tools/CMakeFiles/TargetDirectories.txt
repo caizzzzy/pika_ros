@@ -1,0 +1,12 @@
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/uninstall.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/data_tools_uninstall.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/data_tools_dataCapture.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/data_tools_dataSync.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/data_tools_dataPublish.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/test.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/edit_cache.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/rebuild_cache.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/list_install_components.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/install.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/install/local.dir
+/mnt/nas/projects/robot/pika_ros/build/data_tools/CMakeFiles/install/strip.dir

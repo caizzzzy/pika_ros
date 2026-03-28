@@ -1,0 +1,3 @@
+source;share/diana_robot/hook/pythonpath.ps1
+source;share/diana_robot/hook/pythonpath.dsv
+source;share/diana_robot/hook/pythonpath.sh

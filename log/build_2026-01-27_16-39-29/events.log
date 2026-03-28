@@ -1,0 +1,633 @@
+[0.000000] (-) TimerEvent: {}
+[0.000387] (-) JobUnselected: {'identifier': 'data_msgs'}
+[0.000627] (-) JobUnselected: {'identifier': 'diana_robot'}
+[0.000775] (-) JobUnselected: {'identifier': 'pika_remote_diana'}
+[0.000964] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.001156] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.001355] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.001531] (-) JobUnselected: {'identifier': 'sensor_tools'}
+[0.001690] (data_tools) JobQueued: {'identifier': 'data_tools', 'dependencies': OrderedDict()}
+[0.001713] (data_tools) JobStarted: {'identifier': 'data_tools'}
+[0.018167] (data_tools) JobProgress: {'identifier': 'data_tools', 'progress': 'cmake'}
+[0.020424] (data_tools) JobProgress: {'identifier': 'data_tools', 'progress': 'build'}
+[0.021833] (data_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/nas/projects/robot/pika_ros/build/data_tools', '--', '-j128', '-l128'], 'cwd': '/mnt/nas/projects/robot/pika_ros/build/data_tools', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('no_proxy', 'localhost,127.0.0.1,192.168.10.0/24'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'robot'), ('SSH_CLIENT', '10.194.137.15 58944 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://192.168.10.133:7891'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass.sh'), ('pika_L_code', 'LHR-99C08780'), ('ISAACSIM_ASSETS_ROOT', '/mnt/nas/datasets/long/isaac-assets/environments'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/robot/.local/lib/python3.11/site-packages/diana_robot:/home/robot/.local/lib/python3.10/site-packages/diana_robot:/home/robot/.local/lib/python3.11/site-packages/diana_robot:/home/robot/.local/lib/python3.10/site-packages/diana_robot:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/pika_locator/lib:/mnt/nas/projects/robot/pika_ros/install/libsurvive/lib:/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robot'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/mnt/nas/projects/robot/pika_ros'), ('TERM_PROGRAM_VERSION', '1.108.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-45562d02-563e-4057-a6a2-82c431e74984.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('pika_R_code', 'LHR-5D8209C9'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/robot/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('UNFOLDALL_ASSETS_ROOT', '/mnt/nas/datasets/long/clothesnet'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/opt/conda'), ('https_proxy', 'http://192.168.10.133:7890'), ('COLCON_PREFIX_PATH', '/mnt/nas/projects/robot/pika_ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robot'), ('http_proxy', 'http://192.168.10.133:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ISAACLAB_PATH', '/mnt/nas/projects/long/IsaacLab'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '177'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/opt/conda/bin:/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/remote-cli:/home/robot/.local/bin:/opt/conda/bin:/mnt/nas/projects/robot/pika_ros/install/libsurvive/bin:/opt/ros/humble/bin:/opt/conda/bin:/opt/conda/bin:/opt/conda/bin:/home/robot/.local/bin:/opt/conda/bin:/opt/conda/condabin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/robot/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/robot/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-95fc2b791b1b264e.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/robot/.vscode-server/data/User/workspaceStorage/53aa655a525cc44bca8ab800596cfdf5/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-176de168fe.sock'), ('TERM_PROGRAM', 'vscode'), ('XML_CATALOG_FILES', 'file:///opt/conda/etc/xml/catalog file:///etc/xml/catalog file:///opt/conda/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/opt/conda/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/opt/conda/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('_CONDA_EXE', '/opt/conda/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/nas/projects/robot/pika_ros/build/data_tools'), ('CONDA_EXE', '/opt/conda/bin/conda'), ('SSH_CONNECTION', '10.194.137.15 58944 202.38.214.137 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/local/lib/python3.10/dist-packages:/mnt/nas/projects/robot/pika_ros/install/piper/lib/python3.10/site-packages:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages:/mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages:/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/opt/conda'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/mnt/nas/projects/robot/pika_ros/install/piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/opt/ros/humble')]), 'shell': False}
+[0.099371] (-) TimerEvent: {}
+[0.120468] (data_tools) StderrLine: {'line': b'gmake[2]: \xe8\xad\xa6\xe5\x91\x8a\xef\xbc\x9a\xe6\x96\x87\xe4\xbb\xb6\xe2\x80\x9c/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp\xe2\x80\x9d\xe7\x9a\x84\xe4\xbf\xae\xe6\x94\xb9\xe6\x97\xb6\xe9\x97\xb4\xe5\x9c\xa8\xe6\x9c\xaa\xe6\x9d\xa5 537 \xe7\xa7\x92\xe5\x90\x8e\n'}
+[0.134624] (data_tools) StdoutLine: {'line': b'[ 33%] Built target data_tools_dataSync\n'}
+[0.140628] (data_tools) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/data_tools_dataCapture.dir/src/dataCapture.cpp.o\x1b[0m\n'}
+[0.142373] (data_tools) StdoutLine: {'line': b'[ 83%] Built target data_tools_dataPublish\n'}
+[0.199453] (-) TimerEvent: {}
+[0.299709] (-) TimerEvent: {}
+[0.399948] (-) TimerEvent: {}
+[0.500236] (-) TimerEvent: {}
+[0.600481] (-) TimerEvent: {}
+[0.700695] (-) TimerEvent: {}
+[0.800887] (-) TimerEvent: {}
+[0.901072] (-) TimerEvent: {}
+[1.001262] (-) TimerEvent: {}
+[1.101471] (-) TimerEvent: {}
+[1.201693] (-) TimerEvent: {}
+[1.301906] (-) TimerEvent: {}
+[1.402189] (-) TimerEvent: {}
+[1.502410] (-) TimerEvent: {}
+[1.602628] (-) TimerEvent: {}
+[1.702831] (-) TimerEvent: {}
+[1.803034] (-) TimerEvent: {}
+[1.903261] (-) TimerEvent: {}
+[2.003453] (-) TimerEvent: {}
+[2.103653] (-) TimerEvent: {}
+[2.203890] (-) TimerEvent: {}
+[2.304239] (-) TimerEvent: {}
+[2.404499] (-) TimerEvent: {}
+[2.504775] (-) TimerEvent: {}
+[2.604987] (-) TimerEvent: {}
+[2.705225] (-) TimerEvent: {}
+[2.805430] (-) TimerEvent: {}
+[2.905633] (-) TimerEvent: {}
+[3.005839] (-) TimerEvent: {}
+[3.106031] (-) TimerEvent: {}
+[3.206247] (-) TimerEvent: {}
+[3.306438] (-) TimerEvent: {}
+[3.406625] (-) TimerEvent: {}
+[3.506818] (-) TimerEvent: {}
+[3.607007] (-) TimerEvent: {}
+[3.707222] (-) TimerEvent: {}
+[3.807414] (-) TimerEvent: {}
+[3.907598] (-) TimerEvent: {}
+[4.007784] (-) TimerEvent: {}
+[4.107975] (-) TimerEvent: {}
+[4.208179] (-) TimerEvent: {}
+[4.308357] (-) TimerEvent: {}
+[4.408537] (-) TimerEvent: {}
+[4.508721] (-) TimerEvent: {}
+[4.608901] (-) TimerEvent: {}
+[4.709088] (-) TimerEvent: {}
+[4.809282] (-) TimerEvent: {}
+[4.909492] (-) TimerEvent: {}
+[5.009768] (-) TimerEvent: {}
+[5.109968] (-) TimerEvent: {}
+[5.210276] (-) TimerEvent: {}
+[5.310603] (-) TimerEvent: {}
+[5.410839] (-) TimerEvent: {}
+[5.511140] (-) TimerEvent: {}
+[5.611383] (-) TimerEvent: {}
+[5.711613] (-) TimerEvent: {}
+[5.811863] (-) TimerEvent: {}
+[5.912090] (-) TimerEvent: {}
+[6.012283] (-) TimerEvent: {}
+[6.112477] (-) TimerEvent: {}
+[6.212677] (-) TimerEvent: {}
+[6.296220] (data_tools) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DataCapture::cameraPointCloudSaving(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.296554] (data_tools) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:928:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid pcl::PassThrough<PointT>::setFilterLimitsNegative(bool) [with PointT = pcl::PointXYZRGB]\x1b[m\x1b[K\xe2\x80\x99 is deprecated: use inherited FilterIndices::setNegative() instead (It will be removed in PCL 1.13) [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.296880] (data_tools) StderrLine: {'line': b'  928 | \x1b[01;35m\x1b[Kative(false)\x1b[m\x1b[K;\n'}
+[6.297102] (data_tools) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.297453] (data_tools) StderrLine: {'line': b'\n'}
+[6.297814] (data_tools) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:22\x1b[m\x1b[K:\n'}
+[6.298139] (data_tools) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/filters/passthrough.h:156:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.298617] (data_tools) StderrLine: {'line': b'  156 |   \x1b[01;36m\x1b[KsetFilterLimitsNegative\x1b[m\x1b[K (const bool limit_negative)\n'}
+[6.298762] (data_tools) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.298958] (data_tools) StderrLine: {'line': b'\n'}
+[6.312748] (-) TimerEvent: {}
+[6.412946] (-) TimerEvent: {}
+[6.513214] (-) TimerEvent: {}
+[6.613452] (-) TimerEvent: {}
+[6.713678] (-) TimerEvent: {}
+[6.813906] (-) TimerEvent: {}
+[6.914101] (-) TimerEvent: {}
+[7.014291] (-) TimerEvent: {}
+[7.114482] (-) TimerEvent: {}
+[7.214668] (-) TimerEvent: {}
+[7.314851] (-) TimerEvent: {}
+[7.415066] (-) TimerEvent: {}
+[7.515256] (-) TimerEvent: {}
+[7.615432] (-) TimerEvent: {}
+[7.715613] (-) TimerEvent: {}
+[7.815798] (-) TimerEvent: {}
+[7.915973] (-) TimerEvent: {}
+[8.016172] (-) TimerEvent: {}
+[8.116354] (-) TimerEvent: {}
+[8.216534] (-) TimerEvent: {}
+[8.316706] (-) TimerEvent: {}
+[8.416905] (-) TimerEvent: {}
+[8.517176] (-) TimerEvent: {}
+[8.617398] (-) TimerEvent: {}
+[8.717609] (-) TimerEvent: {}
+[8.817825] (-) TimerEvent: {}
+[8.918033] (-) TimerEvent: {}
+[9.018287] (-) TimerEvent: {}
+[9.118500] (-) TimerEvent: {}
+[9.218706] (-) TimerEvent: {}
+[9.318914] (-) TimerEvent: {}
+[9.419162] (-) TimerEvent: {}
+[9.519369] (-) TimerEvent: {}
+[9.619589] (-) TimerEvent: {}
+[9.719844] (-) TimerEvent: {}
+[9.820066] (-) TimerEvent: {}
+[9.920258] (-) TimerEvent: {}
+[10.020441] (-) TimerEvent: {}
+[10.120640] (-) TimerEvent: {}
+[10.220881] (-) TimerEvent: {}
+[10.321107] (-) TimerEvent: {}
+[10.421344] (-) TimerEvent: {}
+[10.521555] (-) TimerEvent: {}
+[10.621764] (-) TimerEvent: {}
+[10.721984] (-) TimerEvent: {}
+[10.822262] (-) TimerEvent: {}
+[10.922476] (-) TimerEvent: {}
+[11.022666] (-) TimerEvent: {}
+[11.122855] (-) TimerEvent: {}
+[11.223092] (-) TimerEvent: {}
+[11.323275] (-) TimerEvent: {}
+[11.423470] (-) TimerEvent: {}
+[11.523654] (-) TimerEvent: {}
+[11.623833] (-) TimerEvent: {}
+[11.724026] (-) TimerEvent: {}
+[11.824237] (-) TimerEvent: {}
+[11.924423] (-) TimerEvent: {}
+[12.024609] (-) TimerEvent: {}
+[12.124795] (-) TimerEvent: {}
+[12.224991] (-) TimerEvent: {}
+[12.325243] (-) TimerEvent: {}
+[12.425481] (-) TimerEvent: {}
+[12.525699] (-) TimerEvent: {}
+[12.625905] (-) TimerEvent: {}
+[12.726151] (-) TimerEvent: {}
+[12.826366] (-) TimerEvent: {}
+[12.926574] (-) TimerEvent: {}
+[13.026784] (-) TimerEvent: {}
+[13.126997] (-) TimerEvent: {}
+[13.227233] (-) TimerEvent: {}
+[13.327441] (-) TimerEvent: {}
+[13.427638] (-) TimerEvent: {}
+[13.527844] (-) TimerEvent: {}
+[13.628072] (-) TimerEvent: {}
+[13.728293] (-) TimerEvent: {}
+[13.828550] (-) TimerEvent: {}
+[13.928771] (-) TimerEvent: {}
+[14.028987] (-) TimerEvent: {}
+[14.129222] (-) TimerEvent: {}
+[14.229430] (-) TimerEvent: {}
+[14.329666] (-) TimerEvent: {}
+[14.429984] (-) TimerEvent: {}
+[14.530259] (-) TimerEvent: {}
+[14.630478] (-) TimerEvent: {}
+[14.730694] (-) TimerEvent: {}
+[14.830916] (-) TimerEvent: {}
+[14.931130] (-) TimerEvent: {}
+[15.031349] (-) TimerEvent: {}
+[15.131569] (-) TimerEvent: {}
+[15.231787] (-) TimerEvent: {}
+[15.332007] (-) TimerEvent: {}
+[15.432303] (-) TimerEvent: {}
+[15.532529] (-) TimerEvent: {}
+[15.632736] (-) TimerEvent: {}
+[15.690927] (data_tools) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DataCapture::monitoring()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.691267] (data_tools) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/nas/projects/robot/pika_ros/src/data_tools/src/dataCapture.cpp:1397:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kignoring return value of \xe2\x80\x98\x1b[01m\x1b[Kint system(const char*)\x1b[m\x1b[K\xe2\x80\x99 declared with attribute \xe2\x80\x98\x1b[01m\x1b[Kwarn_unused_result\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result\x07-Wunused-result\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.691461] (data_tools) StderrLine: {'line': b' 1397 | \x1b[01;35m\x1b[Ktem("clear")\x1b[m\x1b[K;\n'}
+[15.691715] (data_tools) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.691999] (data_tools) StderrLine: {'line': b'\n'}
+[15.732801] (-) TimerEvent: {}
+[15.832936] (-) TimerEvent: {}
+[15.933073] (-) TimerEvent: {}
+[16.033261] (-) TimerEvent: {}
+[16.133443] (-) TimerEvent: {}
+[16.233627] (-) TimerEvent: {}
+[16.333806] (-) TimerEvent: {}
+[16.433987] (-) TimerEvent: {}
+[16.534204] (-) TimerEvent: {}
+[16.634381] (-) TimerEvent: {}
+[16.734556] (-) TimerEvent: {}
+[16.834736] (-) TimerEvent: {}
+[16.934914] (-) TimerEvent: {}
+[17.035091] (-) TimerEvent: {}
+[17.135300] (-) TimerEvent: {}
+[17.235561] (-) TimerEvent: {}
+[17.335787] (-) TimerEvent: {}
+[17.436051] (-) TimerEvent: {}
+[17.536305] (-) TimerEvent: {}
+[17.636585] (-) TimerEvent: {}
+[17.736821] (-) TimerEvent: {}
+[17.837034] (-) TimerEvent: {}
+[17.937273] (-) TimerEvent: {}
+[18.037498] (-) TimerEvent: {}
+[18.137709] (-) TimerEvent: {}
+[18.237906] (-) TimerEvent: {}
+[18.338099] (-) TimerEvent: {}
+[18.438335] (-) TimerEvent: {}
+[18.538594] (-) TimerEvent: {}
+[18.638844] (-) TimerEvent: {}
+[18.739143] (-) TimerEvent: {}
+[18.839510] (-) TimerEvent: {}
+[18.939763] (-) TimerEvent: {}
+[19.039997] (-) TimerEvent: {}
+[19.140230] (-) TimerEvent: {}
+[19.240425] (-) TimerEvent: {}
+[19.340616] (-) TimerEvent: {}
+[19.440806] (-) TimerEvent: {}
+[19.540993] (-) TimerEvent: {}
+[19.641211] (-) TimerEvent: {}
+[19.741411] (-) TimerEvent: {}
+[19.841603] (-) TimerEvent: {}
+[19.941794] (-) TimerEvent: {}
+[20.041987] (-) TimerEvent: {}
+[20.142197] (-) TimerEvent: {}
+[20.242379] (-) TimerEvent: {}
+[20.342567] (-) TimerEvent: {}
+[20.442776] (-) TimerEvent: {}
+[20.542984] (-) TimerEvent: {}
+[20.643228] (-) TimerEvent: {}
+[20.743439] (-) TimerEvent: {}
+[20.843703] (-) TimerEvent: {}
+[20.944103] (-) TimerEvent: {}
+[21.044371] (-) TimerEvent: {}
+[21.144592] (-) TimerEvent: {}
+[21.244795] (-) TimerEvent: {}
+[21.344988] (-) TimerEvent: {}
+[21.445214] (-) TimerEvent: {}
+[21.545406] (-) TimerEvent: {}
+[21.645632] (-) TimerEvent: {}
+[21.745869] (-) TimerEvent: {}
+[21.846074] (-) TimerEvent: {}
+[21.946272] (-) TimerEvent: {}
+[22.046465] (-) TimerEvent: {}
+[22.146664] (-) TimerEvent: {}
+[22.246860] (-) TimerEvent: {}
+[22.347101] (-) TimerEvent: {}
+[22.447298] (-) TimerEvent: {}
+[22.547488] (-) TimerEvent: {}
+[22.647679] (-) TimerEvent: {}
+[22.747897] (-) TimerEvent: {}
+[22.848131] (-) TimerEvent: {}
+[22.948339] (-) TimerEvent: {}
+[23.048545] (-) TimerEvent: {}
+[23.148746] (-) TimerEvent: {}
+[23.248954] (-) TimerEvent: {}
+[23.349181] (-) TimerEvent: {}
+[23.449392] (-) TimerEvent: {}
+[23.549587] (-) TimerEvent: {}
+[23.649778] (-) TimerEvent: {}
+[23.750007] (-) TimerEvent: {}
+[23.850315] (-) TimerEvent: {}
+[23.950527] (-) TimerEvent: {}
+[24.050733] (-) TimerEvent: {}
+[24.150937] (-) TimerEvent: {}
+[24.251149] (-) TimerEvent: {}
+[24.351332] (-) TimerEvent: {}
+[24.451528] (-) TimerEvent: {}
+[24.551725] (-) TimerEvent: {}
+[24.651922] (-) TimerEvent: {}
+[24.752166] (-) TimerEvent: {}
+[24.852357] (-) TimerEvent: {}
+[24.952548] (-) TimerEvent: {}
+[25.052750] (-) TimerEvent: {}
+[25.152952] (-) TimerEvent: {}
+[25.253164] (-) TimerEvent: {}
+[25.353356] (-) TimerEvent: {}
+[25.453565] (-) TimerEvent: {}
+[25.553772] (-) TimerEvent: {}
+[25.653991] (-) TimerEvent: {}
+[25.754271] (-) TimerEvent: {}
+[25.854567] (-) TimerEvent: {}
+[25.954869] (-) TimerEvent: {}
+[26.055185] (-) TimerEvent: {}
+[26.155465] (-) TimerEvent: {}
+[26.255710] (-) TimerEvent: {}
+[26.355929] (-) TimerEvent: {}
+[26.456166] (-) TimerEvent: {}
+[26.556360] (-) TimerEvent: {}
+[26.656560] (-) TimerEvent: {}
+[26.756787] (-) TimerEvent: {}
+[26.856983] (-) TimerEvent: {}
+[26.957200] (-) TimerEvent: {}
+[27.057391] (-) TimerEvent: {}
+[27.157574] (-) TimerEvent: {}
+[27.257748] (-) TimerEvent: {}
+[27.357930] (-) TimerEvent: {}
+[27.458113] (-) TimerEvent: {}
+[27.558300] (-) TimerEvent: {}
+[27.658481] (-) TimerEvent: {}
+[27.758667] (-) TimerEvent: {}
+[27.858844] (-) TimerEvent: {}
+[27.959023] (-) TimerEvent: {}
+[28.059237] (-) TimerEvent: {}
+[28.159416] (-) TimerEvent: {}
+[28.259589] (-) TimerEvent: {}
+[28.359758] (-) TimerEvent: {}
+[28.459937] (-) TimerEvent: {}
+[28.560159] (-) TimerEvent: {}
+[28.660345] (-) TimerEvent: {}
+[28.760533] (-) TimerEvent: {}
+[28.860711] (-) TimerEvent: {}
+[28.960897] (-) TimerEvent: {}
+[29.061089] (-) TimerEvent: {}
+[29.161276] (-) TimerEvent: {}
+[29.261473] (-) TimerEvent: {}
+[29.361666] (-) TimerEvent: {}
+[29.461858] (-) TimerEvent: {}
+[29.562072] (-) TimerEvent: {}
+[29.662269] (-) TimerEvent: {}
+[29.762479] (-) TimerEvent: {}
+[29.862671] (-) TimerEvent: {}
+[29.962877] (-) TimerEvent: {}
+[30.063088] (-) TimerEvent: {}
+[30.163306] (-) TimerEvent: {}
+[30.263502] (-) TimerEvent: {}
+[30.363697] (-) TimerEvent: {}
+[30.463904] (-) TimerEvent: {}
+[30.564137] (-) TimerEvent: {}
+[30.664346] (-) TimerEvent: {}
+[30.764584] (-) TimerEvent: {}
+[30.864790] (-) TimerEvent: {}
+[30.964990] (-) TimerEvent: {}
+[31.065210] (-) TimerEvent: {}
+[31.165404] (-) TimerEvent: {}
+[31.265597] (-) TimerEvent: {}
+[31.365791] (-) TimerEvent: {}
+[31.465973] (-) TimerEvent: {}
+[31.566205] (-) TimerEvent: {}
+[31.666403] (-) TimerEvent: {}
+[31.766595] (-) TimerEvent: {}
+[31.866776] (-) TimerEvent: {}
+[31.966960] (-) TimerEvent: {}
+[32.067169] (-) TimerEvent: {}
+[32.167353] (-) TimerEvent: {}
+[32.267532] (-) TimerEvent: {}
+[32.367719] (-) TimerEvent: {}
+[32.467907] (-) TimerEvent: {}
+[32.568086] (-) TimerEvent: {}
+[32.668270] (-) TimerEvent: {}
+[32.768466] (-) TimerEvent: {}
+[32.868655] (-) TimerEvent: {}
+[32.968848] (-) TimerEvent: {}
+[33.069032] (-) TimerEvent: {}
+[33.169246] (-) TimerEvent: {}
+[33.269430] (-) TimerEvent: {}
+[33.369608] (-) TimerEvent: {}
+[33.469791] (-) TimerEvent: {}
+[33.569972] (-) TimerEvent: {}
+[33.670184] (-) TimerEvent: {}
+[33.770385] (-) TimerEvent: {}
+[33.870569] (-) TimerEvent: {}
+[33.970751] (-) TimerEvent: {}
+[34.070931] (-) TimerEvent: {}
+[34.171141] (-) TimerEvent: {}
+[34.271321] (-) TimerEvent: {}
+[34.371508] (-) TimerEvent: {}
+[34.471698] (-) TimerEvent: {}
+[34.571886] (-) TimerEvent: {}
+[34.672077] (-) TimerEvent: {}
+[34.772284] (-) TimerEvent: {}
+[34.872470] (-) TimerEvent: {}
+[34.972648] (-) TimerEvent: {}
+[35.072827] (-) TimerEvent: {}
+[35.173006] (-) TimerEvent: {}
+[35.273217] (-) TimerEvent: {}
+[35.373416] (-) TimerEvent: {}
+[35.473605] (-) TimerEvent: {}
+[35.573787] (-) TimerEvent: {}
+[35.673967] (-) TimerEvent: {}
+[35.774251] (-) TimerEvent: {}
+[35.874640] (-) TimerEvent: {}
+[35.974890] (-) TimerEvent: {}
+[36.075105] (-) TimerEvent: {}
+[36.175304] (-) TimerEvent: {}
+[36.275517] (-) TimerEvent: {}
+[36.375799] (-) TimerEvent: {}
+[36.476073] (-) TimerEvent: {}
+[36.576313] (-) TimerEvent: {}
+[36.676545] (-) TimerEvent: {}
+[36.776773] (-) TimerEvent: {}
+[36.876978] (-) TimerEvent: {}
+[36.977212] (-) TimerEvent: {}
+[37.077412] (-) TimerEvent: {}
+[37.177601] (-) TimerEvent: {}
+[37.277779] (-) TimerEvent: {}
+[37.377966] (-) TimerEvent: {}
+[37.478223] (-) TimerEvent: {}
+[37.578408] (-) TimerEvent: {}
+[37.678597] (-) TimerEvent: {}
+[37.778802] (-) TimerEvent: {}
+[37.878987] (-) TimerEvent: {}
+[37.979194] (-) TimerEvent: {}
+[38.079395] (-) TimerEvent: {}
+[38.179600] (-) TimerEvent: {}
+[38.279812] (-) TimerEvent: {}
+[38.380061] (-) TimerEvent: {}
+[38.480273] (-) TimerEvent: {}
+[38.580472] (-) TimerEvent: {}
+[38.680663] (-) TimerEvent: {}
+[38.780874] (-) TimerEvent: {}
+[38.881066] (-) TimerEvent: {}
+[38.981258] (-) TimerEvent: {}
+[39.081443] (-) TimerEvent: {}
+[39.181625] (-) TimerEvent: {}
+[39.281810] (-) TimerEvent: {}
+[39.382006] (-) TimerEvent: {}
+[39.482217] (-) TimerEvent: {}
+[39.582398] (-) TimerEvent: {}
+[39.682579] (-) TimerEvent: {}
+[39.782761] (-) TimerEvent: {}
+[39.882938] (-) TimerEvent: {}
+[39.983147] (-) TimerEvent: {}
+[40.083329] (-) TimerEvent: {}
+[40.183507] (-) TimerEvent: {}
+[40.283699] (-) TimerEvent: {}
+[40.383916] (-) TimerEvent: {}
+[40.484187] (-) TimerEvent: {}
+[40.584421] (-) TimerEvent: {}
+[40.684620] (-) TimerEvent: {}
+[40.784810] (-) TimerEvent: {}
+[40.884990] (-) TimerEvent: {}
+[40.985208] (-) TimerEvent: {}
+[41.085408] (-) TimerEvent: {}
+[41.185604] (-) TimerEvent: {}
+[41.285807] (-) TimerEvent: {}
+[41.385999] (-) TimerEvent: {}
+[41.486242] (-) TimerEvent: {}
+[41.586467] (-) TimerEvent: {}
+[41.686675] (-) TimerEvent: {}
+[41.786901] (-) TimerEvent: {}
+[41.887106] (-) TimerEvent: {}
+[41.987310] (-) TimerEvent: {}
+[42.087513] (-) TimerEvent: {}
+[42.187709] (-) TimerEvent: {}
+[42.287919] (-) TimerEvent: {}
+[42.388221] (-) TimerEvent: {}
+[42.488433] (-) TimerEvent: {}
+[42.588642] (-) TimerEvent: {}
+[42.688848] (-) TimerEvent: {}
+[42.789079] (-) TimerEvent: {}
+[42.889286] (-) TimerEvent: {}
+[42.989478] (-) TimerEvent: {}
+[43.089676] (-) TimerEvent: {}
+[43.189876] (-) TimerEvent: {}
+[43.290075] (-) TimerEvent: {}
+[43.390272] (-) TimerEvent: {}
+[43.490466] (-) TimerEvent: {}
+[43.590661] (-) TimerEvent: {}
+[43.690841] (-) TimerEvent: {}
+[43.791021] (-) TimerEvent: {}
+[43.891268] (-) TimerEvent: {}
+[43.991504] (-) TimerEvent: {}
+[44.091713] (-) TimerEvent: {}
+[44.191919] (-) TimerEvent: {}
+[44.292142] (-) TimerEvent: {}
+[44.392342] (-) TimerEvent: {}
+[44.492532] (-) TimerEvent: {}
+[44.592713] (-) TimerEvent: {}
+[44.692898] (-) TimerEvent: {}
+[44.793089] (-) TimerEvent: {}
+[44.893272] (-) TimerEvent: {}
+[44.993454] (-) TimerEvent: {}
+[45.093638] (-) TimerEvent: {}
+[45.193818] (-) TimerEvent: {}
+[45.293997] (-) TimerEvent: {}
+[45.394202] (-) TimerEvent: {}
+[45.494389] (-) TimerEvent: {}
+[45.594578] (-) TimerEvent: {}
+[45.694767] (-) TimerEvent: {}
+[45.794974] (-) TimerEvent: {}
+[45.895224] (-) TimerEvent: {}
+[45.995421] (-) TimerEvent: {}
+[46.095604] (-) TimerEvent: {}
+[46.195788] (-) TimerEvent: {}
+[46.295980] (-) TimerEvent: {}
+[46.396200] (-) TimerEvent: {}
+[46.496391] (-) TimerEvent: {}
+[46.596577] (-) TimerEvent: {}
+[46.696763] (-) TimerEvent: {}
+[46.796964] (-) TimerEvent: {}
+[46.897176] (-) TimerEvent: {}
+[46.997367] (-) TimerEvent: {}
+[47.097564] (-) TimerEvent: {}
+[47.197746] (-) TimerEvent: {}
+[47.297921] (-) TimerEvent: {}
+[47.398102] (-) TimerEvent: {}
+[47.498288] (-) TimerEvent: {}
+[47.598467] (-) TimerEvent: {}
+[47.698649] (-) TimerEvent: {}
+[47.798839] (-) TimerEvent: {}
+[47.899020] (-) TimerEvent: {}
+[47.999250] (-) TimerEvent: {}
+[48.099455] (-) TimerEvent: {}
+[48.199657] (-) TimerEvent: {}
+[48.299861] (-) TimerEvent: {}
+[48.400061] (-) TimerEvent: {}
+[48.500242] (-) TimerEvent: {}
+[48.600422] (-) TimerEvent: {}
+[48.700606] (-) TimerEvent: {}
+[48.800801] (-) TimerEvent: {}
+[48.900987] (-) TimerEvent: {}
+[49.001204] (-) TimerEvent: {}
+[49.101396] (-) TimerEvent: {}
+[49.201581] (-) TimerEvent: {}
+[49.301769] (-) TimerEvent: {}
+[49.401966] (-) TimerEvent: {}
+[49.502193] (-) TimerEvent: {}
+[49.602395] (-) TimerEvent: {}
+[49.702588] (-) TimerEvent: {}
+[49.802793] (-) TimerEvent: {}
+[49.902982] (-) TimerEvent: {}
+[50.003190] (-) TimerEvent: {}
+[50.103381] (-) TimerEvent: {}
+[50.203588] (-) TimerEvent: {}
+[50.303776] (-) TimerEvent: {}
+[50.403976] (-) TimerEvent: {}
+[50.504206] (-) TimerEvent: {}
+[50.604394] (-) TimerEvent: {}
+[50.704581] (-) TimerEvent: {}
+[50.804791] (-) TimerEvent: {}
+[50.904981] (-) TimerEvent: {}
+[51.005204] (-) TimerEvent: {}
+[51.105391] (-) TimerEvent: {}
+[51.205623] (-) TimerEvent: {}
+[51.305947] (-) TimerEvent: {}
+[51.406230] (-) TimerEvent: {}
+[51.506448] (-) TimerEvent: {}
+[51.606660] (-) TimerEvent: {}
+[51.706867] (-) TimerEvent: {}
+[51.807080] (-) TimerEvent: {}
+[51.907284] (-) TimerEvent: {}
+[51.973815] (data_tools) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable data_tools_dataCapture\x1b[0m\n'}
+[52.007382] (-) TimerEvent: {}
+[52.107640] (-) TimerEvent: {}
+[52.207853] (-) TimerEvent: {}
+[52.308099] (-) TimerEvent: {}
+[52.408370] (-) TimerEvent: {}
+[52.508601] (-) TimerEvent: {}
+[52.608802] (-) TimerEvent: {}
+[52.709001] (-) TimerEvent: {}
+[52.809234] (-) TimerEvent: {}
+[52.909424] (-) TimerEvent: {}
+[53.009619] (-) TimerEvent: {}
+[53.109830] (-) TimerEvent: {}
+[53.210059] (-) TimerEvent: {}
+[53.310261] (-) TimerEvent: {}
+[53.410480] (-) TimerEvent: {}
+[53.510717] (-) TimerEvent: {}
+[53.610948] (-) TimerEvent: {}
+[53.711211] (-) TimerEvent: {}
+[53.811475] (-) TimerEvent: {}
+[53.866328] (data_tools) StderrLine: {'line': b'gmake[2]: \xe8\xad\xa6\xe5\x91\x8a\xef\xbc\x9a\xe6\xa3\x80\xe6\xb5\x8b\xe5\x88\xb0\xe6\x97\xb6\xe9\x92\x9f\xe9\x94\x99\xe8\xaf\xaf\xe3\x80\x82\xe6\x82\xa8\xe7\x9a\x84\xe6\x9e\x84\xe5\xbb\xba\xe7\x89\x88\xe6\x9c\xac\xe5\x8f\xaf\xe8\x83\xbd\xe6\x98\xaf\xe4\xb8\x8d\xe5\xae\x8c\xe6\x95\xb4\xe7\x9a\x84\xe3\x80\x82\n'}
+[53.882292] (data_tools) StdoutLine: {'line': b'[100%] Built target data_tools_dataCapture\n'}
+[53.900175] (data_tools) CommandEnded: {'returncode': 0}
+[53.902410] (data_tools) JobProgress: {'identifier': 'data_tools', 'progress': 'install'}
+[53.911553] (-) TimerEvent: {}
+[53.913818] (data_tools) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/nas/projects/robot/pika_ros/build/data_tools'], 'cwd': '/mnt/nas/projects/robot/pika_ros/build/data_tools', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('no_proxy', 'localhost,127.0.0.1,192.168.10.0/24'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'robot'), ('SSH_CLIENT', '10.194.137.15 58944 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks5://192.168.10.133:7891'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass.sh'), ('pika_L_code', 'LHR-99C08780'), ('ISAACSIM_ASSETS_ROOT', '/mnt/nas/datasets/long/isaac-assets/environments'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/robot/.local/lib/python3.11/site-packages/diana_robot:/home/robot/.local/lib/python3.10/site-packages/diana_robot:/home/robot/.local/lib/python3.11/site-packages/diana_robot:/home/robot/.local/lib/python3.10/site-packages/diana_robot:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera/lib:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/lib:/mnt/nas/projects/robot/pika_ros/install/pika_locator/lib:/mnt/nas/projects/robot/pika_ros/install/libsurvive/lib:/mnt/nas/projects/robot/pika_ros/install/data_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robot'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/mnt/nas/projects/robot/pika_ros'), ('TERM_PROGRAM_VERSION', '1.108.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-45562d02-563e-4057-a6a2-82c431e74984.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('pika_R_code', 'LHR-5D8209C9'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/robot/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('UNFOLDALL_ASSETS_ROOT', '/mnt/nas/datasets/long/clothesnet'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/opt/conda'), ('https_proxy', 'http://192.168.10.133:7890'), ('COLCON_PREFIX_PATH', '/mnt/nas/projects/robot/pika_ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robot'), ('http_proxy', 'http://192.168.10.133:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ISAACLAB_PATH', '/mnt/nas/projects/long/IsaacLab'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '177'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/opt/conda/bin:/home/robot/.vscode-server/cli/servers/Stable-585eba7c0c34fd6b30faac7c62a42050bfbc0086/server/bin/remote-cli:/home/robot/.local/bin:/opt/conda/bin:/mnt/nas/projects/robot/pika_ros/install/libsurvive/bin:/opt/ros/humble/bin:/opt/conda/bin:/opt/conda/bin:/opt/conda/bin:/home/robot/.local/bin:/opt/conda/bin:/opt/conda/condabin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/robot/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/robot/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-95fc2b791b1b264e.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/robot/.vscode-server/data/User/workspaceStorage/53aa655a525cc44bca8ab800596cfdf5/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-176de168fe.sock'), ('TERM_PROGRAM', 'vscode'), ('XML_CATALOG_FILES', 'file:///opt/conda/etc/xml/catalog file:///etc/xml/catalog file:///opt/conda/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/opt/conda/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/opt/conda/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('_CONDA_EXE', '/opt/conda/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/nas/projects/robot/pika_ros/build/data_tools'), ('CONDA_EXE', '/opt/conda/bin/conda'), ('SSH_CONNECTION', '10.194.137.15 58944 202.38.214.137 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/mnt/nas/projects/robot/pika_ros/install/piper_msgs/local/lib/python3.10/dist-packages:/mnt/nas/projects/robot/pika_ros/install/piper/lib/python3.10/site-packages:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana/lib/python3.10/site-packages:/mnt/nas/projects/robot/pika_ros/install/diana_robot/lib/python3.10/site-packages:/mnt/nas/projects/robot/pika_ros/install/data_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/opt/conda'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mnt/nas/projects/robot/pika_ros/install/sensor_tools:/mnt/nas/projects/robot/pika_ros/install/realsense2_description:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera:/mnt/nas/projects/robot/pika_ros/install/realsense2_camera_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_msgs:/mnt/nas/projects/robot/pika_ros/install/piper_description:/mnt/nas/projects/robot/pika_ros/install/pika_remote_piper:/mnt/nas/projects/robot/pika_ros/install/pika_locator:/mnt/nas/projects/robot/pika_ros/install/data_tools:/mnt/nas/projects/robot/pika_ros/install/data_msgs:/mnt/nas/projects/robot/pika_ros/install/piper:/mnt/nas/projects/robot/pika_ros/install/pika_remote_diana:/opt/ros/humble')]), 'shell': False}
+[53.920576] (data_tools) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[53.920919] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch\n'}
+[53.921774] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_aloha_data_capture_to_mcap.launch.py\n'}
+[53.922201] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_compress_camera.launch.py\n'}
+[53.922765] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_capture.launch.py\n'}
+[53.923208] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_capture_to_mcap.launch.py\n'}
+[53.923798] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_publish.launch.py\n'}
+[53.924652] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_data_sync.launch.py\n'}
+[53.925202] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_lift_data_capture_to_mcap.launch.py\n'}
+[53.925661] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//launch/run_multi_data_capture_to_mcap.launch.py\n'}
+[53.925931] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config\n'}
+[53.926697] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/aloha_data_params.yaml\n'}
+[53.927169] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/lift_data_params.yaml\n'}
+[53.927833] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/multi_pika_data_params.yaml\n'}
+[53.928372] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/multi_pika_teleop_data_params.yaml\n'}
+[53.928893] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_data_params.yaml\n'}
+[53.929430] (data_tools) StdoutLine: {'line': b'-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_teleop_data_params.yaml\n'}
+[53.931735] (data_tools) StdoutLine: {'line': b'-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools//config/single_pika_teleop_data_params_prior.yaml\n'}
+[53.934323] (data_tools) StdoutLine: {'line': b'-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataCapture\n'}
+[53.989156] (data_tools) StdoutLine: {'line': b'-- Set runtime path of "/mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataCapture" to ""\n'}
+[53.990832] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataSync\n'}
+[53.993866] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_tools_dataPublish\n'}
+[53.995721] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include\n'}
+[53.996255] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include/blockingDeque.h\n'}
+[53.996781] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/include/dataUtility.h\n'}
+[53.997336] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/aloha_data_to_mcap.py\n'}
+[53.997649] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/camera_point_cloud_filter.py\n'}
+[53.998149] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/compress_camera.py\n'}
+[53.998579] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_publish.py\n'}
+[53.999191] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_refacctoring_tar.py\n'}
+[53.999692] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_sync.py\n'}
+[54.000183] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/data_to_hdf5.py\n'}
+[54.000786] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/hdf5_to_lerobot.py\n'}
+[54.001302] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/hdf5_to_mcap.py\n'}
+[54.001798] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/load_data_example.py\n'}
+[54.002288] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/mcap_to_aloha_data.py\n'}
+[54.002798] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/lib/data_tools/record_mcap.py\n'}
+[54.003054] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/package_run_dependencies/data_tools\n'}
+[54.003549] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/parent_prefix_path/data_tools\n'}
+[54.004027] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/ament_prefix_path.sh\n'}
+[54.004625] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/ament_prefix_path.dsv\n'}
+[54.004871] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/path.sh\n'}
+[54.005339] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/environment/path.dsv\n'}
+[54.005637] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.bash\n'}
+[54.005914] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.sh\n'}
+[54.006362] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.zsh\n'}
+[54.006813] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/local_setup.dsv\n'}
+[54.007367] (data_tools) StdoutLine: {'line': b'-- Installing: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/package.dsv\n'}
+[54.009186] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/ament_index/resource_index/packages/data_tools\n'}
+[54.009578] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[54.009902] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/data_toolsConfig.cmake\n'}
+[54.010257] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/cmake/data_toolsConfig-version.cmake\n'}
+[54.010470] (data_tools) StdoutLine: {'line': b'-- Up-to-date: /mnt/nas/projects/robot/pika_ros/install/data_tools/share/data_tools/package.xml\n'}
+[54.011611] (-) TimerEvent: {}
+[54.013568] (data_tools) CommandEnded: {'returncode': 0}
+[54.045057] (data_tools) JobEnded: {'identifier': 'data_tools', 'rc': 0}
+[54.047001] (-) EventReactorShutdown: {}
