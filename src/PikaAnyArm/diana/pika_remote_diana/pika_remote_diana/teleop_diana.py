@@ -210,7 +210,7 @@ class ArmIK(Node):
         # 获取并发布末端位姿 (EndPose)
         tcp_pose = self.diana_control.get_tcp_pose()
         if tcp_pose:
-            print(12345)
+            # print(12345)
             pose_msg = PoseStamped()
             pose_msg.header = Header()
             pose_msg.header.stamp = self.get_clock().now().to_msg()
