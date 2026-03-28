@@ -1,6 +1,0 @@
-gmake[2]: 警告：文件“CMakeFiles/data_tools_dataCapture.dir/compiler_depend.make”的修改时间在未来 263 秒后
-gmake[2]: 警告：文件“CMakeFiles/data_tools_dataPublish.dir/compiler_depend.make”的修改时间在未来 263 秒后
-gmake[2]: 警告：文件“CMakeFiles/data_tools_dataSync.dir/compiler_depend.make”的修改时间在未来 263 秒后
-gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
-gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
-gmake[2]: 警告：检测到时钟错误。您的构建版本可能是不完整的。

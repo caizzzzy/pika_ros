@@ -1,3 +1,0 @@
-[console_scripts]
-teleop_diana = pika_remote_diana.teleop_diana:main
-
