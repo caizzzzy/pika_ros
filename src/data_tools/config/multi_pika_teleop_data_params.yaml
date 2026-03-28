@@ -4,15 +4,15 @@
 
       camera:
         color:
-          names: ['pikaGripperDepthCamera_l', 'pikaGripperDepthCamera_r', 'pikaGripperFisheyeCamera_l', 'pikaGripperFisheyeCamera_r']
-          parentFrames: ['gripper/camera_l_link', 'gripper/camera_r_link', 'gripper/camera_fisheye_l_link', 'gripper/camera_fisheye_r_link']
-          topics: ['/gripper/camera_l/color/image_raw', '/gripper/camera_r/color/image_raw', '/gripper/camera_fisheye_l/color/image_raw', '/gripper/camera_fisheye_r/color/image_raw']
-          configTopics: ['/gripper/camera_l/color/camera_info', '/gripper/camera_r/color/camera_info', '/gripper/camera_fisheye_l/color/camera_info', '/gripper/camera_fisheye_r/color/camera_info']
+          names: ['pikaGripperDepthCamera_l', 'pikaGripperDepthCamera_r', 'pikaGripperFisheyeCamera_l', 'pikaGripperFisheyeCamera_r', 'globalRealSense']
+          parentFrames: ['gripper/camera_l_link', 'gripper/camera_r_link', 'gripper/camera_fisheye_l_link', 'gripper/camera_fisheye_r_link', 'global_camera_color_optical_frame']
+          topics: ['/gripper/camera_l/color/image_raw', '/gripper/camera_r/color/image_raw', '/gripper/camera_fisheye_l/color/image_raw', '/gripper/camera_fisheye_r/color/image_raw', '/global_camera/color/image_raw']
+          configTopics: ['/gripper/camera_l/color/camera_info', '/gripper/camera_r/color/camera_info', '/gripper/camera_fisheye_l/color/camera_info', '/gripper/camera_fisheye_r/color/camera_info', '/global_camera/color/camera_info']
         depth:
-          names: ['pikaGripperDepthCamera_l', 'pikaGripperDepthCamera_r']
-          parentFrames: ['gripper/camera_l_link', 'gripper/camera_r_link']
-          topics: ['/gripper/camera_l/aligned_depth_to_color/image_raw', '/gripper/camera_r/aligned_depth_to_color/image_raw']
-          configTopics: ['/gripper/camera_l/aligned_depth_to_color/camera_info', '/gripper/camera_r/aligned_depth_to_color/camera_info']
+          names: ['pikaGripperDepthCamera_l', 'pikaGripperDepthCamera_r', 'globalRealSense']
+          parentFrames: ['gripper/camera_l_link', 'gripper/camera_r_link', 'global_camera_color_optical_frame']
+          topics: ['/gripper/camera_l/aligned_depth_to_color/image_raw', '/gripper/camera_r/aligned_depth_to_color/image_raw', '/global_camera/aligned_depth_to_color/image_raw']
+          configTopics: ['/gripper/camera_l/aligned_depth_to_color/camera_info', '/gripper/camera_r/aligned_depth_to_color/camera_info', '/global_camera/aligned_depth_to_color/camera_info']
         # pointCloud:
         #   names: []
         #   parentFrames: []

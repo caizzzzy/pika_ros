@@ -4,15 +4,15 @@
 
       camera:
         color:
-          names: ['pikaDepthCamera_l', 'pikaDepthCamera_r', 'pikaFisheyeCamera_l', 'pikaFisheyeCamera_r']
-          parentFrames: ['camera_l_link', 'camera_r_link', 'camera_fisheye_l_link', 'camera_fisheye_r_link']
-          topics: ['/camera_l/color/image_raw', '/camera_r/color/image_raw', '/camera_fisheye_l/color/image_raw', '/camera_fisheye_r/color/image_raw']
-          configTopics: ['/camera_l/color/camera_info', '/camera_r/color/camera_info', '/camera_fisheye_l/color/camera_info', '/camera_fisheye_r/color/camera_info']
+          names: ['pikaDepthCamera_l', 'pikaDepthCamera_r', 'pikaFisheyeCamera_l', 'pikaFisheyeCamera_r', 'globalRealSense']
+          parentFrames: ['camera_l_link', 'camera_r_link', 'camera_fisheye_l_link', 'camera_fisheye_r_link', 'global_camera_color_optical_frame']
+          topics: ['/camera_l/color/image_raw', '/camera_r/color/image_raw', '/camera_fisheye_l/color/image_raw', '/camera_fisheye_r/color/image_raw', '/global_camera/color/image_raw']
+          configTopics: ['/camera_l/color/camera_info', '/camera_r/color/camera_info', '/camera_fisheye_l/color/camera_info', '/camera_fisheye_r/color/camera_info', '/global_camera/color/camera_info']
         depth:
-          names: ['pikaDepthCamera_l', 'pikaDepthCamera_r']
-          parentFrames: ['camera_l_link', 'camera_r_link']
-          topics: ['/camera_l/aligned_depth_to_color/image_raw', '/camera_r/aligned_depth_to_color/image_raw']
-          configTopics: ['/camera_l/aligned_depth_to_color/camera_info', '/camera_r/aligned_depth_to_color/camera_info']
+          names: ['pikaDepthCamera_l', 'pikaDepthCamera_r', 'globalRealSense']
+          parentFrames: ['camera_l_link', 'camera_r_link', 'global_camera_color_optical_frame']
+          topics: ['/camera_l/aligned_depth_to_color/image_raw', '/camera_r/aligned_depth_to_color/image_raw', '/global_camera/aligned_depth_to_color/image_raw']
+          configTopics: ['/camera_l/aligned_depth_to_color/camera_info', '/camera_r/aligned_depth_to_color/camera_info', '/global_camera/aligned_depth_to_color/camera_info']
         # pointCloud:
         #   names: []
         #   parentFrames: []
