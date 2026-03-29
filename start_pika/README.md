@@ -7,6 +7,33 @@
 
 ## 启动脚本列表
 
+0. 采集后自动处理：同步 + HDF5 转换
+
+```bash
+bash /mnt/nas/projects/robot/pika_ros/start_pika/process_pika_dataset.sh
+```
+
+这个脚本会交互式让你选择:
+
+- 单夹持器
+- 双夹持器
+- 单夹持器遥操作
+- 双夹持器遥操作
+
+随后自动执行:
+
+- `ros2 launch data_tools run_data_sync.launch.py ...`
+- `python3 scripts/data_to_hdf5.py ...`
+
+并支持你输入:
+
+- `datasetDir`
+- `episodeIndex`
+  - `-1` 表示处理全部 episode
+  - 非负整数表示只处理对应的 `episode{N}`
+
+脚本顶部的 `DEFAULT_DATASET_DIR` 是四种 type 共用的默认目录；如果你每次采集后都会自己改目录名，改这一处就够了。
+
 1. 单臂遥操作 + 数据采集
 
 ```bash
