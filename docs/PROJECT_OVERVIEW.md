@@ -309,6 +309,42 @@
   - USB 鱼眼入口。
 - [src/sensor_tools/scripts/find_usb_camera.py](/mnt/nas/projects/robot/pika_ros/src/sensor_tools/scripts/find_usb_camera.py)
   - 用于找摄像头口，和外部手册中的设备绑定流程一致。
+- [scripts/setup_device.py](/mnt/nas/projects/robot/pika_ros/scripts/setup_device.py)
+  - 交互式设备绑定生成工具，不是运行期核心节点。
+  - 功能概括：
+    - 逐个要求用户插入设备，读取 RealSense 序列号、串口 USB 路径、鱼眼摄像头 USB 路径。
+    - 根据用户选择的设备组合，生成 `setup_multi_sensor.bash`、`setup_multi_gripper.bash` 或 `setup_sensor_gripper.bash`，以及对应的 `start_*.bash`。
+    - 生成的 `setup_*.bash` 会写入 `/etc/udev/rules.d/`，把设备固定绑定到 `ttyUSB50/51/60/61`、`video50/51/60/61` 这套命名。
+    - 生成的 `start_*.bash` 会把探测到的 RealSense 序列号和固定端口号写死为启动参数，后续日常运行主要依赖这些生成物，而不是再次运行 `setup_device.py`。
+    - 脚本最后会立即执行生成出的 `setup_*.bash`，然后要求用户重新拔插设备，检查绑定是否生效。
+  - 适用时机：
+    - 首次给新设备做 USB 口/串口/鱼眼绑定。
+    - 更换设备或更换插口后重新生成绑定脚本。
+  - 不适用时机：
+    - 日常 teleop / 采集启动；那时通常直接运行现成的 `start_*.bash` 或 `start_pika/` 下的一键启动器。
+  - 代码现状：
+    - 仓库在 [src/sensor_tools/scripts/setup_device.py](/mnt/nas/projects/robot/pika_ros/src/sensor_tools/scripts/setup_device.py) 下还有一份同内容副本，当前看起来是同步拷贝，而不是两套不同逻辑。
+  - 当前支持的绑定模式与生成物关系：
+    - `1. 两个 pika sensor`
+      - 生成 `setup_multi_sensor.bash`
+      - 生成 `start_multi_sensor.bash`
+      - 绑定结果：`ttyUSB50/51`、`video50/51`
+    - `2. 两个 pika gripper`
+      - 生成 `setup_multi_gripper.bash`
+      - 生成 `start_multi_gripper.bash`
+      - 绑定结果：`ttyUSB60/61`、`video60/61`
+    - `3. 一个 pika sensor + 一个 pika gripper`
+      - 生成 `setup_sensor_gripper.bash`
+      - 生成 `start_sensor_gripper.bash`
+      - 绑定结果：sensor -> `ttyUSB50/video50`，gripper -> `ttyUSB60/video60`
+    - `4. 一个 pika sensor + 两个 pika gripper，其中第二个 gripper 作为 global_camera`
+      - 生成 `setup_sensor_2grippers_global_camera.bash`
+      - 生成 `start_sensor_2grippers_global_camera.bash`
+      - 生成 `start_pika/single_arm_sensor_2grippers_device_config.bash`
+      - 绑定结果：sensor -> `ttyUSB50/video50`，gripper_A -> `ttyUSB60/video60`，gripper_B -> `ttyUSB61/video61`
+      - 用途说明：
+        - `start_sensor_2grippers_global_camera.bash` 只是进入 [start_single_arm_teleop_capture_sensor_2grippers.sh](/mnt/nas/projects/robot/pika_ros/start_pika/start_single_arm_teleop_capture_sensor_2grippers.sh) 的快捷包装。
+        - 真正给单臂遥操作启动器提供现场参数的是 `start_pika/single_arm_sensor_2grippers_device_config.bash`，其中会写入 `SENSOR_DEPTH_CAMERA_NO`、`GRIPPER_A_DEPTH_CAMERA_NO`、`GRIPPER_B_GLOBAL_CAMERA_SERIAL_NO` 等变量。
 - 根目录脚本
   - [teleop_single_diana.sh](/mnt/nas/projects/robot/pika_ros/teleop_single_diana.sh)
   - [teleop_dual_diana.sh](/mnt/nas/projects/robot/pika_ros/teleop_dual_diana.sh)
@@ -343,6 +379,7 @@
 1. 启动传感器侧
    - 单套：`open_single_sensor.launch.py` 或 `open_single_gripper.launch.py`
    - 双套：`open_multi_sensor.launch.py` 或 `open_multi_gripper.launch.py`
+   - 如果是新设备首次上机，通常先运行 `scripts/setup_device.py` 生成/刷新 `setup_*.bash` 与 `start_*.bash`，完成 udev 绑定，再进入后续日常启动流程。
 2. 确认 `pika_locator` 正常输出 `pika_pose*`
 3. 如果需要遥操作，再启动 `teleop_single_diana.launch.py` 或 `teleop_double_diana.launch.py`
 4. 如果需要采集：
@@ -351,6 +388,44 @@
 5. 采集完成后：
    - 原始 episode 走 `run_data_sync.launch.py`
    - 回放走 `run_data_publish.launch.py`
+
+### 特定场景：1 sensor + 2 grippers，其中 gripper_B 作为 global_camera
+
+- 当前仓库已支持通过 [start_pika/start_single_arm_teleop_capture_sensor_2grippers.sh](/mnt/nas/projects/robot/pika_ros/start_pika/start_single_arm_teleop_capture_sensor_2grippers.sh) 启动该场景。
+- 角色分配：
+  - `sensor + gripper_A`：单臂遥操作链路
+  - `gripper_B`：不参与夹爪控制，只把其深度相机作为 `/global_camera/*` 数据源
+- 该模式下，能从当前代码明确确认的关键 topic 如下：
+  - teleop 输入与状态
+    - `/pika_pose`
+    - `/joint_states`
+    - `/joint_states_single`
+    - `/joint_states_single_gripper`
+    - `/arm_end_pose`
+  - sensor 侧 gripper/imu
+    - `/sensor/gripper/data`
+    - `/sensor/gripper/ctrl`
+    - `/sensor/gripper/joint_state`
+    - `/sensor/imu/data`
+  - gripper_A 侧 gripper/imu
+    - `/gripper/gripper/data`
+    - `/gripper/gripper/ctrl`
+    - `/gripper/gripper/joint_state`
+    - `/imu/data`
+  - 相机话题
+    - `/gripper/camera/color/image_raw`
+    - `/gripper/camera/color/camera_info`
+    - `/gripper/camera/aligned_depth_to_color/image_raw`
+    - `/gripper/camera/aligned_depth_to_color/camera_info`
+    - `/gripper/camera_fisheye/color/image_raw`
+    - `/gripper/camera_fisheye/color/camera_info`
+    - `/global_camera/color/image_raw`
+    - `/global_camera/color/camera_info`
+    - `/global_camera/aligned_depth_to_color/image_raw`
+    - `/global_camera/aligned_depth_to_color/camera_info`
+- 说明：
+  - 这里的 `/global_camera/*` 在该模式下来自 gripper_B 的深度相机序列号，而不是默认外部 RealSense。
+  - 当前实现没有把 gripper_B 作为第二套串口夹爪节点单独启动，因此不会额外出现一整套“gripper_B 控制链” topic；它主要以 `/global_camera/*` 这组相机 topic 的形式出现。
 
 ### 关键命令形态
 

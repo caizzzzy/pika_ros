@@ -58,6 +58,26 @@ bash /mnt/nas/projects/robot/pika_ros/start_pika/start_dual_arm_teleop_capture.s
 - `ros2 launch pika_remote_diana teleop_double_diana.launch.py`
 - `ros2 launch data_tools run_data_capture.launch.py type:=multi_pika_teleop`
 
+5. 单臂遥操作 + 数据采集（1 sensor + 2 grippers，第二个 gripper 充当 global_camera）
+
+```bash
+bash /mnt/nas/projects/robot/pika_ros/start_pika/start_single_arm_teleop_capture_sensor_2grippers.sh
+```
+
+对应链路:
+
+- `survive-cli`
+- `ros2 launch sensor_tools open_sensor_gripper.launch.py ...`
+- `ros2 launch pika_remote_diana teleop_single_diana.launch.py`
+- `ros2 launch data_tools run_data_capture.launch.py type:=single_pika_teleop`
+
+这个场景的特殊点:
+
+- `sensor + gripper_A` 负责单臂遥操作
+- `gripper_B` 不参与机械臂控制，只提供 `global_camera` 的深度相机数据
+- 需要你手动在脚本顶部填写 `GRIPPER_B_GLOBAL_CAMERA_SERIAL_NO`
+- 这条链路复用了现有 `/global_camera/...` 数据采集配置，因此不需要额外改 `data_tools` YAML
+
 ## 通用使用方式
 
 1. 运行脚本后，先输入本次采集要使用的 `episodeIndex` 起始编号。
@@ -95,6 +115,7 @@ dual_arm_20260328_154200
 - `start_single_sensor_capture.sh`: `$HOME/agilex/data_single_pika`
 - `start_multi_sensor_capture.sh`: `$HOME/agilex/data_multi_pika`
 - `start_dual_arm_teleop_capture.sh`: `$HOME/agilex/data_multi_pika_teleop`
+- `start_single_arm_teleop_capture_sensor_2grippers.sh`: `$HOME/agilex/datatest_sensor_2grippers`
 
 如需修改数据保存目录，请直接编辑对应脚本里的 `DATASET_DIR`。
 
