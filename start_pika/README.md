@@ -34,6 +34,14 @@ bash /mnt/nas/projects/robot/pika_ros/start_pika/process_pika_dataset.sh
 
 脚本顶部的 `DEFAULT_DATASET_DIR` 是四种 type 共用的默认目录；如果你每次采集后都会自己改目录名，改这一处就够了。
 
+0.5. 单独进行基站校准
+
+```bash
+bash /mnt/nas/projects/robot/pika_ros/start_pika/run_survive_calibration.sh
+```
+
+这个脚本只负责前台启动 `survive-cli`。
+
 1. 单臂遥操作 + 数据采集
 
 ```bash
@@ -42,7 +50,6 @@ bash /mnt/nas/projects/robot/pika_ros/start_pika/start_single_arm_teleop_capture
 
 对应链路:
 
-- `survive-cli`
 - `scripts/start_sensor_gripper.bash`
 - `ros2 launch pika_remote_diana teleop_single_diana.launch.py`
 - `ros2 launch data_tools run_data_capture.launch.py type:=single_pika_teleop`
@@ -55,7 +62,6 @@ bash /mnt/nas/projects/robot/pika_ros/start_pika/start_single_sensor_capture.sh
 
 对应链路:
 
-- `survive-cli`
 - `scripts/start_single_sensor.bash`
 - `ros2 launch data_tools run_data_capture.launch.py type:=single_pika`
 
@@ -67,7 +73,6 @@ bash /mnt/nas/projects/robot/pika_ros/start_pika/start_multi_sensor_capture.sh
 
 对应链路:
 
-- `survive-cli`
 - `scripts/start_multi_sensor.bash`
 - `ros2 launch data_tools run_data_capture.launch.py type:=multi_pika`
 
@@ -79,7 +84,6 @@ bash /mnt/nas/projects/robot/pika_ros/start_pika/start_dual_arm_teleop_capture.s
 
 对应链路:
 
-- `survive-cli`
 - `scripts/start_multi_sensor.bash sensor`
 - `scripts/start_multi_gripper.bash gripper sensor`
 - `ros2 launch pika_remote_diana teleop_double_diana.launch.py`
@@ -93,7 +97,6 @@ bash /mnt/nas/projects/robot/pika_ros/start_pika/start_single_arm_teleop_capture
 
 对应链路:
 
-- `survive-cli`
 - `ros2 launch sensor_tools open_sensor_gripper.launch.py ...`
 - `ros2 launch pika_remote_diana teleop_single_diana.launch.py`
 - `ros2 launch data_tools run_data_capture.launch.py type:=single_pika_teleop`
@@ -105,13 +108,34 @@ bash /mnt/nas/projects/robot/pika_ros/start_pika/start_single_arm_teleop_capture
 - 需要你手动在脚本顶部填写 `GRIPPER_B_GLOBAL_CAMERA_SERIAL_NO`
 - 这条链路复用了现有 `/global_camera/...` 数据采集配置，因此不需要额外改 `data_tools` YAML
 
+6. 推理阶段：单 gripper + gripper_B 作为 global_camera（适配 1 sensor + 2 grippers 的训练数据）
+
+```bash
+bash /mnt/nas/projects/robot/pika_ros/start_pika/start_single_gripper_inference_sensor_2grippers.sh
+```
+
+对应链路:
+
+- `ros2 launch sensor_tools open_single_gripper.launch.py ...`
+
+这个场景的特殊点:
+
+- 只启动推理阶段常用的 `single_gripper` 这一侧，不启动 sensor / teleop / data capture
+- `gripper_A` 提供：
+  - `/gripper/*`
+  - `/camera_fisheye/*`
+  - 主深度相机 `/camera/*`
+- `gripper_B` 的深度相机被映射为：
+  - `/global_camera/*`
+- 不需要再额外单独运行一条 `ros2 launch realsense2_camera rs_launch.py ... global_camera ...`
+- 如果你之前已经用 `scripts/setup_device.py` 第 4 种模式生成过 `start_pika/single_arm_sensor_2grippers_device_config.bash`，这个脚本会自动读取其中的 gripper_A / gripper_B 参数
+
 ## 通用使用方式
 
-1. 运行脚本后，先输入本次采集要使用的 `episodeIndex` 起始编号。
-2. 脚本会前台启动 `survive-cli`。
-3. 基站状态由你自己观察和判断，确认完成后由你本人按 `Ctrl+C` 结束 `survive-cli`。
-4. 退出 `survive-cli` 后，脚本会再次询问是否继续；确认后才会启动后续长期运行进程。
-5. 主脚本保持前台运行；需要整体关闭时，在主脚本终端按 `Ctrl+C`，脚本会清理它拉起的后台进程。
+1. 如需基站校准，先运行 `run_survive_calibration.sh`。
+2. 校准完成后，由你本人按 `Ctrl+C` 结束 `survive-cli`。
+3. 再运行对应场景的启动脚本，并输入本次采集要使用的 `episodeIndex` 起始编号。
+4. 主脚本保持前台运行；需要整体关闭时，在主脚本终端按 `Ctrl+C`，脚本会清理它拉起的后台进程。
 
 ## 日志
 
@@ -149,5 +173,5 @@ dual_arm_20260328_154200
 ## 说明
 
 - 这些启动器不会修改现有业务脚本，只是调用现有链路。
-- `survive-cli` 没有被静默后台化，而是保留为前台交互步骤。这是故意的，因为它依赖人工判断是否成功、也可能需要重复尝试。
+- `survive-cli` 现在单独放在 `run_survive_calibration.sh` 里，避免它和长期运行的 teleop / capture 进程共用一个前台脚本。
 - 某些底层启动脚本会访问设备权限或调用 `sudo`；启动器会在进入后台流程前先做权限检查，避免后台卡在密码提示上。

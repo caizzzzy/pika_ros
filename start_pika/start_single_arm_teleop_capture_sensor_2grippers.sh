@@ -5,7 +5,6 @@ set -Eeuo pipefail
 PROJECT_ROOT="/mnt/nas/projects/robot/pika_ros"
 INSTALL_SETUP="${PROJECT_ROOT}/install/setup.bash"
 ROS_SETUP="/opt/ros/humble/setup.bash"
-SURVIVE_DIR="${PROJECT_ROOT}/install/libsurvive/bin"
 SENSOR_TOOLS_SCRIPTS_DIR="${PROJECT_ROOT}/install/sensor_tools/share/sensor_tools/scripts"
 
 DATASET_DIR="${HOME}/agilex/datatest_sensor_2grippers"
@@ -67,7 +66,6 @@ require_dir() {
 setup_checks() {
     require_file "${INSTALL_SETUP}"
     require_file "${ROS_SETUP}"
-    require_dir "${SURVIVE_DIR}"
     require_dir "${SENSOR_TOOLS_SCRIPTS_DIR}"
 
     [[ "${GRIPPER_B_GLOBAL_CAMERA_SERIAL_NO}" != "TODO_SET_GRIPPER_B_DEPTH_SERIAL" ]] || abort \
@@ -84,44 +82,6 @@ prompt_episode_index() {
             return
         fi
         log "请输入非负整数。"
-    done
-}
-
-confirm_continue() {
-    local prompt="$1"
-    local answer
-    while true; do
-        read -r -p "${prompt} [y/n]: " answer || exit 1
-        case "${answer}" in
-            y|Y) return 0 ;;
-            n|N) return 1 ;;
-            *) log "请输入 y 或 n。" ;;
-        esac
-    done
-}
-
-run_survive_cli() {
-    log "步骤 1/4: 前台启动 survive-cli。"
-    log "请你根据现场情况观察基站校准结果；确认完成后由你本人按 Ctrl+C 结束。"
-    log "如果这一步失败，可以重复执行；主脚本不会自动跳过你的判断。"
-    echo
-
-    while true; do
-        (
-            cd "${SURVIVE_DIR}"
-            exec ./survive-cli
-        )
-
-        echo
-        if confirm_continue "survive-cli 已结束，是否确认基站状态已经满足继续启动"; then
-            break
-        fi
-
-        if ! confirm_continue "是否重新运行 survive-cli"; then
-            abort "用户取消启动流程。"
-        fi
-
-        echo
     done
 }
 
@@ -261,7 +221,6 @@ main() {
     log "episodeIndex 起始为: ${EPISODE_INDEX}"
     log "gripper_B global camera serial: ${GRIPPER_B_GLOBAL_CAMERA_SERIAL_NO}"
 
-    run_survive_cli
     prepare_sudo
     prepare_device_permissions
 

@@ -19,6 +19,19 @@ DATA_LABEL=""
 DATASET_DIR=""
 EPISODE_INDEX=""
 EPISODE_NAME=""
+SYNC_IMPL="configurable"
+SYNC_IMPL_LABEL="可配置混合同步"
+CAMERA_COLOR_POLICY="nearest"
+CAMERA_DEPTH_POLICY="nearest"
+CAMERA_POINT_CLOUD_POLICY="nearest"
+ARM_JOINT_STATE_POLICY="causal"
+ARM_END_POSE_POLICY="causal"
+LOCALIZATION_POSE_POLICY="causal"
+GRIPPER_ENCODER_POLICY="causal"
+IMU_9AXIS_POLICY="causal"
+LIDAR_POINT_CLOUD_POLICY="causal"
+ROBOT_BASE_VEL_POLICY="causal"
+LIFT_MOTOR_POLICY="causal"
 
 mkdir -p "${RUN_LOG_DIR}"
 
@@ -143,6 +156,94 @@ prompt_episode_index() {
     done
 }
 
+prompt_sync_strategy() {
+    local input
+    while true; do
+        cat <<'EOF'
+
+请选择同步策略:
+  1. 推荐混合模式   图像 nearest，state/action causal
+  2. 全部 nearest    与原始同步逻辑更接近
+  3. 自定义          逐模态选择 nearest 或 causal
+EOF
+        read -r -p "输入编号 [1-3，默认 1]: " input || exit 1
+        input="${input:-1}"
+        case "${input}" in
+            1)
+                SYNC_IMPL="configurable"
+                SYNC_IMPL_LABEL="推荐混合模式"
+                CAMERA_COLOR_POLICY="nearest"
+                CAMERA_DEPTH_POLICY="nearest"
+                CAMERA_POINT_CLOUD_POLICY="nearest"
+                ARM_JOINT_STATE_POLICY="causal"
+                ARM_END_POSE_POLICY="causal"
+                LOCALIZATION_POSE_POLICY="causal"
+                GRIPPER_ENCODER_POLICY="causal"
+                IMU_9AXIS_POLICY="causal"
+                LIDAR_POINT_CLOUD_POLICY="causal"
+                ROBOT_BASE_VEL_POLICY="causal"
+                LIFT_MOTOR_POLICY="causal"
+                return
+                ;;
+            2)
+                SYNC_IMPL="configurable"
+                SYNC_IMPL_LABEL="全部 nearest"
+                CAMERA_COLOR_POLICY="nearest"
+                CAMERA_DEPTH_POLICY="nearest"
+                CAMERA_POINT_CLOUD_POLICY="nearest"
+                ARM_JOINT_STATE_POLICY="nearest"
+                ARM_END_POSE_POLICY="nearest"
+                LOCALIZATION_POSE_POLICY="nearest"
+                GRIPPER_ENCODER_POLICY="nearest"
+                IMU_9AXIS_POLICY="nearest"
+                LIDAR_POINT_CLOUD_POLICY="nearest"
+                ROBOT_BASE_VEL_POLICY="nearest"
+                LIFT_MOTOR_POLICY="nearest"
+                return
+                ;;
+            3)
+                SYNC_IMPL="configurable"
+                SYNC_IMPL_LABEL="自定义混合同步"
+                prompt_policy_choice "camera.color" CAMERA_COLOR_POLICY "nearest"
+                prompt_policy_choice "camera.depth" CAMERA_DEPTH_POLICY "nearest"
+                prompt_policy_choice "camera.pointCloud" CAMERA_POINT_CLOUD_POLICY "nearest"
+                prompt_policy_choice "arm.jointState" ARM_JOINT_STATE_POLICY "causal"
+                prompt_policy_choice "arm.endPose" ARM_END_POSE_POLICY "causal"
+                prompt_policy_choice "localization.pose" LOCALIZATION_POSE_POLICY "causal"
+                prompt_policy_choice "gripper.encoder" GRIPPER_ENCODER_POLICY "causal"
+                prompt_policy_choice "imu.9axis" IMU_9AXIS_POLICY "causal"
+                prompt_policy_choice "lidar.pointCloud" LIDAR_POINT_CLOUD_POLICY "causal"
+                prompt_policy_choice "robotBase.vel" ROBOT_BASE_VEL_POLICY "causal"
+                prompt_policy_choice "lift.motor" LIFT_MOTOR_POLICY "causal"
+                return
+                ;;
+            *)
+                log "请输入 1 到 3 之间的编号。"
+                ;;
+        esac
+    done
+}
+
+prompt_policy_choice() {
+    local label="$1"
+    local __result_var="$2"
+    local default_value="$3"
+    local input
+    while true; do
+        read -r -p "${label} policy [nearest/causal，默认 ${default_value}]: " input || exit 1
+        input="${input:-${default_value}}"
+        case "${input}" in
+            nearest|causal)
+                printf -v "${__result_var}" '%s' "${input}"
+                return
+                ;;
+            *)
+                log "请输入 nearest 或 causal。"
+                ;;
+        esac
+    done
+}
+
 show_summary() {
     cat <<EOF
 
@@ -151,6 +252,7 @@ show_summary() {
 类型: ${DATA_LABEL} (${DATA_TYPE})
 datasetDir: ${DATASET_DIR}
 episodeIndex: ${EPISODE_INDEX}
+sync策略: ${SYNC_IMPL_LABEL}
 日志目录: ${RUN_LOG_DIR}
 
 将执行:
@@ -167,7 +269,19 @@ run_data_sync() {
     bash -lc "
 set -Eeuo pipefail
 source \"${INSTALL_SETUP_SH}\"
-ros2 launch data_tools run_data_sync.launch.py type:=\"${DATA_TYPE}\" datasetDir:=\"${DATASET_DIR}\" episodeIndex:=\"${EPISODE_INDEX}\"
+ros2 launch data_tools run_data_sync_causal.launch.py type:=\"${DATA_TYPE}\" datasetDir:=\"${DATASET_DIR}\" episodeIndex:=\"${EPISODE_INDEX}\" \
+timeDiffLimit:=\"0.03\" \
+camera_color_policy:=\"${CAMERA_COLOR_POLICY}\" \
+camera_depth_policy:=\"${CAMERA_DEPTH_POLICY}\" \
+camera_point_cloud_policy:=\"${CAMERA_POINT_CLOUD_POLICY}\" \
+arm_joint_state_policy:=\"${ARM_JOINT_STATE_POLICY}\" \
+arm_end_pose_policy:=\"${ARM_END_POSE_POLICY}\" \
+localization_pose_policy:=\"${LOCALIZATION_POSE_POLICY}\" \
+gripper_encoder_policy:=\"${GRIPPER_ENCODER_POLICY}\" \
+imu_9axis_policy:=\"${IMU_9AXIS_POLICY}\" \
+lidar_point_cloud_policy:=\"${LIDAR_POINT_CLOUD_POLICY}\" \
+robot_base_vel_policy:=\"${ROBOT_BASE_VEL_POLICY}\" \
+lift_motor_policy:=\"${LIFT_MOTOR_POLICY}\"
 " |& tee "${logfile}"
 }
 
@@ -195,6 +309,7 @@ main() {
     choose_data_type
     prompt_dataset_dir
     prompt_episode_index
+    prompt_sync_strategy
     show_summary
 
     if ! confirm_continue "是否开始执行"; then

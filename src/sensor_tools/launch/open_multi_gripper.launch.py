@@ -115,6 +115,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('realsense2_camera'), 'launch', 'rs_launch.py')]),
         condition=IfCondition(enable_global_camera),
         launch_arguments={
+                          'camera_namespace': '',
                           'camera_name': global_camera_name,
                           'serial_no': ["'", global_camera_serial_no, "'"],
                           'align_depth.enable': 'true',

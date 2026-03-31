@@ -163,7 +163,7 @@ sudo udevadm control --reload-rules && sudo service udev restart && sudo udevadm
     return path
 
 
-def generate_start_bash(left_info, right_info, select):
+def generate_start_bash(left_info, right_info, select, third_info=None):
     if select == "1":
         path = "start_multi_sensor.bash"
         content = f"""
@@ -234,8 +234,24 @@ source $SCRIPT_DIR/../install/setup.bash && ros2 launch sensor_tools open_sensor
 """
     else:
         path = "start_sensor_2grippers_global_camera.bash"
-        content = f"""#!/usr/bin/env bash
-bash "{os.path.join(START_PIKA_DIR, 'start_single_arm_teleop_capture_sensor_2grippers.sh')}"
+        content = f"""
+SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
+camera_fps=30
+camera_width=640
+camera_height=480
+sensor_depth_camera_no={left_info[0]}
+gripper_depth_camera_no={right_info[0]}
+global_camera_serial_no={third_info[0]}
+
+sensor_serial_port=/dev/ttyUSB50
+gripper_serial_port=/dev/ttyUSB60
+sudo chmod a+rw /dev/ttyUSB*
+sensor_fisheye_port=50
+gripper_fisheye_port=60
+sudo chmod a+rw /dev/video*
+
+source /opt/ros/humble/setup.bash && cd $SCRIPT_DIR/../install/sensor_tools/share/sensor_tools/scripts/ && chmod 777 usb_camera.py
+source $SCRIPT_DIR/../install/setup.bash && ros2 launch sensor_tools open_sensor_gripper.launch.py sensor_depth_camera_no:=_$sensor_depth_camera_no gripper_depth_camera_no:=_$gripper_depth_camera_no enable_global_camera:=true global_camera_name:=global_camera global_camera_serial_no:=$global_camera_serial_no sensor_serial_port:=$sensor_serial_port gripper_serial_port:=$gripper_serial_port sensor_fisheye_port:=$sensor_fisheye_port gripper_fisheye_port:=$gripper_fisheye_port camera_fps:=$camera_fps camera_width:=$camera_width camera_height:=$camera_height camera_profile:=$camera_width,$camera_height,$camera_fps
 """
 
     write_executable(path, content)
@@ -352,7 +368,7 @@ def main():
 
     print("正在生成配置文件...")
     setup_path = generate_setup_bash(first_info, second_info, select, third_info)
-    start_path = generate_start_bash(first_info, second_info, select)
+    start_path = generate_start_bash(first_info, second_info, select, third_info)
 
     generated_files = [setup_path, start_path]
     if select == "4":

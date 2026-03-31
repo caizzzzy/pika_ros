@@ -64,6 +64,10 @@ add_executable(${PROJECT_NAME}_dataSync src/dataSync.cpp)
 ament_target_dependencies(${PROJECT_NAME}_dataSync rclpy std_msgs sensor_msgs geometry_msgs nav_msgs pcl_conversions pcl_msgs visualization_msgs tf2 tf2_ros tf2_eigen tf2_sensor_msgs tf2_geometry_msgs OpenCV PCL data_msgs cv_bridge)
 target_link_libraries(${PROJECT_NAME}_dataSync ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${CURL_LIBRARIES} libjsoncpp.so)
 
+add_executable(${PROJECT_NAME}_dataSyncCausal src/dataSync_causal.cpp)
+ament_target_dependencies(${PROJECT_NAME}_dataSyncCausal rclpy std_msgs sensor_msgs geometry_msgs nav_msgs pcl_conversions pcl_msgs visualization_msgs tf2 tf2_ros tf2_eigen tf2_sensor_msgs tf2_geometry_msgs OpenCV PCL data_msgs cv_bridge)
+target_link_libraries(${PROJECT_NAME}_dataSyncCausal ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${CURL_LIBRARIES} libjsoncpp.so)
+
 add_executable(${PROJECT_NAME}_dataPublish src/dataPublish.cpp)
 ament_target_dependencies(${PROJECT_NAME}_dataPublish rclpy std_msgs sensor_msgs geometry_msgs nav_msgs pcl_conversions pcl_msgs visualization_msgs tf2 tf2_ros tf2_eigen tf2_sensor_msgs tf2_geometry_msgs OpenCV PCL data_msgs cv_bridge)
 target_link_libraries(${PROJECT_NAME}_dataPublish ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${CURL_LIBRARIES} libjsoncpp.so)
@@ -85,7 +89,7 @@ install(
 )
 
 install(
-  TARGETS ${PROJECT_NAME}_dataCapture ${PROJECT_NAME}_dataSync ${PROJECT_NAME}_dataPublish #${PROJECT_NAME}_readMcap
+  TARGETS ${PROJECT_NAME}_dataCapture ${PROJECT_NAME}_dataSync ${PROJECT_NAME}_dataSyncCausal ${PROJECT_NAME}_dataPublish #${PROJECT_NAME}_readMcap
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -115,4 +119,3 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
-

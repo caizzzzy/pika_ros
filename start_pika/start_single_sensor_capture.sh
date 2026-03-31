@@ -4,7 +4,6 @@ set -Eeuo pipefail
 
 PROJECT_ROOT="/mnt/nas/projects/robot/pika_ros"
 INSTALL_SETUP="${PROJECT_ROOT}/install/setup.bash"
-SURVIVE_DIR="${PROJECT_ROOT}/install/libsurvive/bin"
 SCRIPTS_DIR="${PROJECT_ROOT}/scripts"
 SENSOR_SCRIPT="${SCRIPTS_DIR}/start_single_sensor.bash"
 
@@ -44,7 +43,6 @@ require_dir() {
 
 setup_checks() {
     require_file "${INSTALL_SETUP}"
-    require_dir "${SURVIVE_DIR}"
     require_file "${SENSOR_SCRIPT}"
 }
 
@@ -58,44 +56,6 @@ prompt_episode_index() {
             return
         fi
         log "请输入非负整数。"
-    done
-}
-
-confirm_continue() {
-    local prompt="$1"
-    local answer
-    while true; do
-        read -r -p "${prompt} [y/n]: " answer || exit 1
-        case "${answer}" in
-            y|Y) return 0 ;;
-            n|N) return 1 ;;
-            *) log "请输入 y 或 n。" ;;
-        esac
-    done
-}
-
-run_survive_cli() {
-    log "步骤 1/3: 前台启动 survive-cli。"
-    log "请你根据现场情况观察基站校准结果；确认完成后由你本人按 Ctrl+C 结束。"
-    log "如果这一步失败，可以重复执行；主脚本不会自动跳过你的判断。"
-    echo
-
-    while true; do
-        (
-            cd "${SURVIVE_DIR}"
-            exec ./survive-cli
-        )
-
-        echo
-        if confirm_continue "survive-cli 已结束，是否确认基站状态已经满足继续启动"; then
-            break
-        fi
-
-        if ! confirm_continue "是否重新运行 survive-cli"; then
-            abort "用户取消启动流程。"
-        fi
-
-        echo
     done
 }
 
@@ -221,8 +181,6 @@ main() {
     log "本次运行日志目录: ${RUN_LOG_DIR}"
     log "datasetDir 固定为: ${DATASET_DIR}"
     log "episodeIndex 起始为: ${EPISODE_INDEX}"
-
-    run_survive_cli
 
     local common_prefix
     local optional_conda_reset_prefix
