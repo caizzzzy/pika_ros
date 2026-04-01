@@ -83,7 +83,7 @@ class ArmIK(Node):
             # 遥操结束机械臂停止在当前位姿，下次遥操从当前位置开始
             self.diana_control.wait_move()
             ret = changeControlMode(mode_e.T_MODE_POSITION, self.robot_ip)
-            # self.diana_control.movej_joint(np.array([-45, -30, 0, 120, 0, -60, 45])*np.pi/180)
+            self.diana_control.movej_joint(np.array([-45, -30, 0, 120, 0, -60, 45])*np.pi/180)
             self.diana_control.wait_move()
             self.initial_pose_rotvec = self.diana_control.get_tcp_pose()
             temp_rotvec = [
