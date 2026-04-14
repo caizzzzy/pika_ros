@@ -12,3 +12,4 @@ sudo chmod a+rw /dev/video*
 source /opt/ros/humble/setup.bash && cd $SCRIPT_DIR/../install/sensor_tools/share/sensor_tools/scripts/ && chmod 777 usb_camera.py
 source $SCRIPT_DIR/../install/setup.bash && ros2 launch sensor_tools open_single_sensor.launch.py serial_port:=/dev/ttyUSB50 fisheye_port:=50 camera_fps:=$camera_fps camera_width:=$camera_width camera_height:=$camera_height camera_profile:=$camera_width,$camera_height,$camera_fps joint_name:=center_joint
 
+

@@ -2,17 +2,28 @@
   ros__parameters:
     dataInfo:
 
-      camera:
+      # camera:
+      #   color:  #双目+鱼眼
+      #     names: ['pikaDepthCamera', 'pikaFisheyeCamera', 'globalRealSense']
+      #     parentFrames: ['camera_link', 'camera_fisheye_link', 'global_camera_color_optical_frame']
+      #     topics: ['/camera/color/image_raw', '/camera_fisheye/color/image_raw', '/global_camera/color/image_raw']
+      #     configTopics: ['/camera/color/camera_info', '/camera_fisheye/color/camera_info', '/global_camera/color/camera_info']
+      #   depth:  #双目
+      #     names: ['pikaDepthCamera', 'globalRealSense']
+      #     parentFrames: ['camera_link', 'global_camera_color_optical_frame']
+      #     topics: ['/camera/aligned_depth_to_color/image_raw', '/global_camera/aligned_depth_to_color/image_raw']
+      #     configTopics: ['/camera/aligned_depth_to_color/camera_info', '/global_camera/aligned_depth_to_color/camera_info']
+        camera:
         color:  #双目+鱼眼
-          names: ['pikaDepthCamera', 'pikaFisheyeCamera', 'globalRealSense']
-          parentFrames: ['camera_link', 'camera_fisheye_link', 'global_camera_color_optical_frame']
-          topics: ['/camera/color/image_raw', '/camera_fisheye/color/image_raw', '/global_camera/color/image_raw']
-          configTopics: ['/camera/color/camera_info', '/camera_fisheye/color/camera_info', '/global_camera/color/camera_info']
+          names: ['pikaDepthCamera', 'pikaFisheyeCamera']
+          parentFrames: ['camera_link', 'camera_fisheye_link']
+          topics: ['/camera/color/image_raw', '/camera_fisheye/color/image_raw']
+          configTopics: ['/camera/color/camera_info', '/camera_fisheye/color/camera_info']
         depth:  #双目
-          names: ['pikaDepthCamera', 'globalRealSense']
-          parentFrames: ['camera_link', 'global_camera_color_optical_frame']
-          topics: ['/camera/aligned_depth_to_color/image_raw', '/global_camera/aligned_depth_to_color/image_raw']
-          configTopics: ['/camera/aligned_depth_to_color/camera_info', '/global_camera/aligned_depth_to_color/camera_info']
+          names: ['pikaDepthCamera']
+          parentFrames: ['camera_link']
+          topics: ['/camera/aligned_depth_to_color/image_raw']
+          configTopics: ['/camera/aligned_depth_to_color/camera_info']
         # pointCloud:
         #   names: []
         #   parentFrames: []
